@@ -1,9 +1,38 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+header,footer {
+  background-color: #E0E5E0;
+  color: #0A3641;
+}
+header a {
+  color: #0A3641;
+}
+.page-intro{
+  background-color: #0A3641;
+  color: white;
+}
+.page-divider {
+  background-color: #0A3641;
+}
 body {
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0;
+}
+.light-button {
+  background-color: white;
+  color: black;
+}
+.dark-button {
+  background-color: black;
+  color: white;
+}
+@font-face {
+  font-family: 'cantarellregular';
+  src: url('cantarell-regular-webfont.woff2') format('woff2'),
+       url('cantarell-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
