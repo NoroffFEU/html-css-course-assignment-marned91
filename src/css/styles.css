@@ -12,14 +12,10 @@ body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
   font-family: 'Cambay', sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
 }
-h1 {
-  font-family: font-family: 'Lato', sans-serif;
-}
-header{
-  font-family:'Cambay', sans-serif; 
-}
-
 .centered {
   display: flex;
   justify-content: center;
@@ -50,11 +46,6 @@ header a {
 .page-divider {
   background-color: #0A3641;
   padding: 2rem;
-}
-body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0;
 }
 .light-button {
   background-color: white;
