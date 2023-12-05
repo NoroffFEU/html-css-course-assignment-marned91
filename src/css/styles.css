@@ -4,41 +4,31 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
-@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lato:wght@900&display=swap');
 
 body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
-  font-family: 'Cambay', sans-serif;
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0;
 }
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+h1 {
+  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.footerLeft {
-  display: inline;
-  align-items: left;
-}
-.footerRight{
-  display: inline;
-  align-items: right;
+h2 {
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 header,footer {
   background-color: #E0E5E0;
   color: #0A3641;
+  padding: 1rem;
 }
 header a {
   color: #0A3641;
 }
+
 .page-intro{
   background-color: #0A3641;
   color: white;
@@ -54,4 +44,11 @@ header a {
 .dark-button {
   background-color: black;
   color: white;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
