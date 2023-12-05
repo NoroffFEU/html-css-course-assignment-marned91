@@ -12,7 +12,12 @@ body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
   font-family: 'Cambay', sans-serif;
-  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-family: font-family: 'Lato', sans-serif;
+}
+header{
+  font-family:'Cambay', sans-serif; 
 }
 
 .centered {
@@ -24,8 +29,12 @@ body {
 }
 
 .footerLeft {
-  display: flex;
+  display: inline;
   align-items: left;
+}
+.footerRight{
+  display: inline;
+  align-items: right;
 }
 header,footer {
   background-color: #E0E5E0;
@@ -37,7 +46,6 @@ header a {
 .page-intro{
   background-color: #0A3641;
   color: white;
-  padding: 3rem;
 }
 .page-divider {
   background-color: #0A3641;
