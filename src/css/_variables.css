@@ -1,13 +1,6 @@
 /* Use this file to store your useful variables */
 /* This could be colors, fonts, or padding sizes! */
 
-@font-face {
-  font-family: 'cantarellregular';
-  src: url('cantarell-regular-webfont.woff2') format('woff2'),
-       url('cantarell-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 :root {
   --color-rainydays-green: #0A3641;
   --color-main-menu-footer: #E4E8E4;
