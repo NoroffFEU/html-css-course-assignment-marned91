@@ -6,11 +6,14 @@
   <meta name = "description" content="How to contacus Rainydays">
   <title>Rainydays | Contact</title>
   <link rel="stylesheet" href="src/css/styles.css">
+  <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-      <img src="assets/images/RainyDays_Logo.png"alt="Rainydays logo"/>
-    <section>
+    <img src="assets/images/RainyDays_Logo.png" class="logo" alt="Rainydays logo"/>
+    <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
       <nav>
         <ul>
             <li><a href="index.html">HOME</a> </li>
@@ -19,20 +22,29 @@
             <li><a href="contact.html" class="active" >CONTACT</a></li>
         </ul>
       </nav>
-    </section>
   </header>
   <main>
     <section class="page-intro">
         <p>At Rainydays, we always want to hear from you! Your feedback is our compass, guiding us to create products that match your needs. We're eager to hear from you—whether it's a question, suggestion, or a shared adventure.</p>
     </section>
     <section>
-        <div>
-            contact form
-        </div>
+        <form method="post" class="contactform">
+                <h3>WRITE TO US</h3>
+                <label for="name" >Full name</label>
+                <input type="text" name="fullname" id="name" class="form__input">
+                <label for="email" >Email address</label>
+                <input type="text" name="email" id="email" class="form__input" required>
+                <label for="orderID" >Order ID</label>
+                <input type="text" name="orderID" id="orderID" class="form__input">
+                <label> Type your message or question here!</legend>
+                <label for="message" >Type your message or question here!</label>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                <input type="submit" value="SEND" class="dark-button">
+        </form>
+    </section>
         <div>
             <img src="assets/images/Contact_us.jpg"alt="Happy customers image"/>
         </div>
-    </section>
   </main>
   <footer>
     &copy; RAINYDAYS 

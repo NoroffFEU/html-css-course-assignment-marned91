@@ -12,22 +12,49 @@ body {
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+header,footer {
+  background-color: #E0E5E0;
+  color: #0A3641;
+  position: relative;
+  padding: 15px;
+  font-size: 1,5rem;
 }
 
-h2 {
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+nav {
+  position: absolute;
+  background: #E0E5E0;
+  left: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0A3641;
+  padding: 30px 20px;
+  font-size: 1rem;
+  display: block;
+  left: 300px;
+}
+
+nav, #menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  nav {
+    position: static;
+    display: block;
+}
+
+.hamburger-icon {
+display: none;
 }
 
 nav li {
   display: inline-block;
-}
-
-nav a {
-  color: #0A3641;
-  text-decoration: none;
-  padding: 10px;
 }
 
 nav a:hover {
@@ -43,19 +70,23 @@ nav ul {
   color: #0A3641;
 }
 
-header,footer {
-  background-color: #E0E5E0;
-  color: #0A3641;
-  padding: 1rem;
-}
-
 footer {
   font-size: small;
 }
 
-.page-intro{
+.home-page-intro, .page-intro{
   background-color: #0A3641;
   color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2, h3, .h4 {
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .page-divider {
@@ -66,9 +97,38 @@ footer {
 .light-button {
   background-color: white;
   color: black;
+  text-decoration: none ;
 }
 
 .dark-button {
   background-color: black;
   color: white;
+  text-decoration: none;
+}
+
+.logo {
+height: auto;
+width: 12%;
+max-width: 100%;
+display: left;
+position: absolute;
+}
+
+.cart-icon {
+  float: right;
+}
+
+.form__input {
+  display: block;
+}
+
+input, legend, textarea, option {
+border: none;
+border-radius: 5px;
+}
+
+.contactform {
+  background-color: #A9BCBB;
+  color: black;
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
