@@ -10,20 +10,22 @@ body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0%;
 }
 
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0%;
 }
 
 
 .logo {
-  height: 4rem;
-  width: 7rem;
+  height: 70px;
+  width: 8rem;
   padding-left: 3%;
-  margin-left: 0%;
+  margin-top: 0%;
+  top: 4px;
+  position: absolute;
   }
 
 .hamburger-icon {
@@ -35,7 +37,7 @@ html, body {
 .cart-icon {
 position: absolute;
 top: 25px;
-right: 10px;
+right: 3%;
 }
 
 header,nav,footer{
@@ -45,17 +47,12 @@ header,nav,footer{
 
 header, footer{
   position: relative;
-  padding: 20px;
+  padding: 13px;
 }
 
 nav {
-  background: #E0E5E0;
   font-size: 1rem;
   max-width: 100%;
-  text-align: left;
-  padding-left: 3rem;
-  margin-top: 0%;
-  position: absolute;
 }
 
 nav a {
@@ -64,16 +61,11 @@ nav a {
   color: #0A3641;
   font-size: 1rem;
   display: block;
-  margin-top: 0px;
-  margin-left: 2rem;
-  left: 200px;
-  top: -60px;
-
+  left: 15rem;
 }
 
 nav, #menu-checkbox {
   display: none;
-  margin-top: 25px;
 
 }
 
@@ -91,12 +83,6 @@ nav, #menu-checkbox {
   .hamburger-icon {
     display: none;
     }  
-    .cart-icon {
-      right: 0%;
-      margin-top: 25px;
-      padding-right: 4%;
-      position: flex;
-    }
 }
 
 .page-divider {
@@ -106,6 +92,7 @@ nav, #menu-checkbox {
 
 nav li {
   display: inline-block;
+  padding-inline: 20px;
 }
 
 nav a:hover {
@@ -128,6 +115,7 @@ footer {
 .home-intro-section, .page-intro{
   background-color: #0A3641;
   color: white;
+
 }
 
 .home-intro-section {
@@ -141,7 +129,7 @@ footer {
 .home-intro-text {
   margin-left: 4%;
   width: 60%;
-  margin-top: 5px;
+  min-width: 30%;
 }
 
 .home-intro-image{
@@ -197,10 +185,24 @@ h2, h3, .h4 {
   padding-bottom: 10px;
 }
 
-input, legend, textarea, option {
+input, #sizes, textarea {
 border: none;
 border-radius: 5px;
-padding-left: 20%;
+}
+
+input, textarea {
+width: 400px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#sizes {
+  width: 200px;
+  background-color: #E0E5E0;
+  color: black;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .contactform {
