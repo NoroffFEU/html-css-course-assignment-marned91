@@ -27,9 +27,15 @@ html, body {
   }
 
 .hamburger-icon {
-  left: 0%;
-  margin-top: 25px;
+  left: 10px;
+  top: 25px;
   position: flex;
+}
+
+.cart-icon {
+position: absolute;
+top: 25px;
+right: 10px;
 }
 
 header,nav,footer{
@@ -91,21 +97,12 @@ nav, #menu-checkbox {
       padding-right: 4%;
       position: flex;
     }
-    .logo {
-      height: 70px;
-      width: 130px;
-      max-width: 9rem;
-      padding-left: 4%;
-      margin-top: 0%;
-      position: static;
-      }
-      .page-divider {
-        background-color: #0A3641;
-        padding: 2rem;
-      }
 }
 
-
+.page-divider {
+  background-color: #0A3641;
+  padding: 2rem;
+}
 
 nav li {
   display: inline-block;
