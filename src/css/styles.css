@@ -13,6 +13,11 @@ body {
   margin: 0%;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 .logo {
   height: 4rem;
@@ -20,13 +25,6 @@ body {
   padding-left: 3%;
   margin-left: 0%;
   }
-
-
-.cart-icon {
-  position: static;
-  right: 500rem;
-  margin-top: 25px;
-}
 
 .hamburger-icon {
   left: 0%;
@@ -156,9 +154,6 @@ footer {
   margin-top: 1rem;
 }
 
-
-}
-
 h1 {
   font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -177,25 +172,44 @@ h2, h3, .h4 {
   background-color: white;
   color: black;
   text-decoration: none ;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
 }
 
 .dark-button {
   background-color: black;
   color: white;
   text-decoration: none;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
 }
 
 .form__input {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 input, legend, textarea, option {
 border: none;
 border-radius: 5px;
+padding-left: 20%;
 }
 
 .contactform {
   background-color: #A9BCBB;
   color: black;
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 2%;
+  padding-top: 4%;
 }
