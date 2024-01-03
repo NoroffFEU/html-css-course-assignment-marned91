@@ -61,13 +61,13 @@ header {
   .cart-icon {
     margin-left: auto;
     margin-right: 30px;
-    }
+  }
 
-.hamburger-icon {
+  .hamburger-icon {
   left: 10px;
   top: 25px;
   position: flex;
-}
+  }
   
   nav a:hover {
     text-decoration: underline;
@@ -83,13 +83,24 @@ header {
     color: #0A3641;
   }
 
-nav, #menu-checkbox {
-  display: none;
+.footer {
+  display: flex;
 }
 
-#menu-checkbox:checked ~ nav {
-  display: block;
+.footer > * {
+  flex: 1;
+  justify-content: space-evenly;
+  display: inline;
 }
+
+  nav, #menu-checkbox {
+  display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+  display: block;
+  }
+
 
 @media (min-width: 600px){
   nav{
@@ -101,15 +112,14 @@ nav, #menu-checkbox {
   .hamburger-icon {
     display: none;
     }  
+  .home-intro-section {
+  flex-direction: row;
+  }
 }
 
 .page-divider {
   background-color: #0A3641;
   padding: 2rem;
-}
-
-footer {
-  font-size: small;
 }
 
 .home-intro-section, .page-intro{
@@ -120,12 +130,17 @@ footer {
 }
 
 .home-intro-section {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
 }
 
 .page-intro {
-  padding: 1rem;
+  padding: 20px 6rem;
+}
+
+.home-page-main-image {
+  width: 90%;
+  height: fit-content;
 }
 
 .home-intro-text {
@@ -140,44 +155,53 @@ footer {
   margin-left: 6%;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+.fabric-info-home, .popular-jackets, .products {
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
 }
 
-h2, h3, .h4 {
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+.windproof-info-home, .waterproof-info-home, .breathable-info-home, .popular-jacket-1, .popular-jacket-2, .popular-jacket-3, .products {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
 }
 
-.page-divider {
-  background-color: #0A3641;
-  padding: 1rem;
+.windproof-icon, .waterproof-icon, .breathable-icon {
+  height: 35%;
+  max-width: 35%;
 }
 
-.light-button {
-  background-color: white;
-  color: black;
-  text-decoration: none ;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 6px;
-  padding-bottom: 3px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
+.fabric-info-home p {
+  max-width: 50%;
+  margin-left: 25%;
 }
 
-.dark-button {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 6px;
-  padding-bottom: 3px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
+.popular-jackets {
+  flex-wrap: wrap;
+}
+
+.popular-jackets h2 {
+  flex: 100%;
+  margin-left: 6%;
+}
+
+.popular-jackets p {
+  max-width: 300px  ;
+  margin-left: 21%;
+}
+
+.jacket-image {
+  width: 70%;
+  min-width: 80px;
+}
+
+.products {
+  padding-top: 4rem;
+  flex-wrap: wrap;
 }
 
 .form__input {
@@ -214,6 +238,65 @@ padding-bottom: 5px;
   padding-top: 4%;
 }
 
-.fleece-jacket {
-  float: left;
+.bold-p{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.h2-home {
+  margin-left: 6rem;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+
+h2, h3, .h4 {
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.page-divider {
+  background-color: #0A3641;
+  padding: 30px;
+}
+
+.light-button{
+  background-color: white;
+  color: black;
+  text-decoration: none ;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.dark-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
 }
