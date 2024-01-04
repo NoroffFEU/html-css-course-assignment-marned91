@@ -228,7 +228,7 @@ header {
 }
 
 .back-p {
-  margin-left: 30px;
+  margin-left: 35px;
   font-size: 15px;
 
 }
@@ -242,7 +242,7 @@ header {
 }
 
 .xandau-image {
-  max-width: 150%;
+  max-width: 140%;
 }
 
 .product-page {
@@ -253,7 +253,7 @@ header {
 
 .product-image {
   flex: 1;
-  margin-left: 30px;
+  margin-left: 36px;
 }
 
 .product-details {
@@ -265,7 +265,7 @@ header {
 }
 
 .product-button {
-  padding-top: 21%;
+  padding-top: 13%;
 
 }
 
@@ -369,5 +369,5 @@ p {
   border-style: solid;
   border-color: black;
   border-radius: 10px;
-  padding: 6px 50px 3px 50px;
+  padding: 6px 49px 3px 49px;
 }
