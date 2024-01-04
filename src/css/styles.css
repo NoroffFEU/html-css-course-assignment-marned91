@@ -132,7 +132,7 @@ header {
 }
 
 .page-divider-large {
-  padding: 3rem;
+  padding: 40px;
 }
 
 .home-intro-section, .page-intro{
@@ -213,7 +213,7 @@ header {
 }
 
 .products {
-  display: flex;
+
   padding-top: 4rem;
   justify-content:space-between;
   max-width: 1200px;
@@ -237,18 +237,47 @@ header {
   color: black
 }
 
-.xandau-product-image{
-  margin-left: 30px;
-  max-width: 80%;
-}
-
 .all-icons {
   width: 90px;
 }
 
-.xandau-rain-jacket {
+.xandau-image {
+  max-width: 150%;
+}
+
+.product-page {
   display: flex;
-  flex: wrap;
+  max-width: 1400px;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.product-details {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  max-width: 700px;
+}
+
+.product-button {
+  padding-top: 21%;
+
+}
+
+#sizes {
+  width: 200px;
+  background-color: #E0E5E0;
+  color: black;
+  border: none;
+  padding: 7px;
+  margin-top: 1rem;
+  text-align: left;
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form__input {
@@ -268,15 +297,6 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#sizes {
-  width: 200px;
-  background-color: #E0E5E0;
-  color: black;
-  border: none;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
 .contactform {
   background-color: #A9BCBB;
   color: black;
@@ -285,9 +305,16 @@ padding-bottom: 5px;
   padding-top: 4%;
 }
 
-.bold-p{
+.bold-p-small, .bold-p-large{
   font-weight: bold;
+}
+
+.bold-p-small{
   font-size: 15px;
+}
+
+.bold-p-large {
+  font-size: 20px;
 }
 
 .h2-home {
@@ -339,11 +366,8 @@ p {
   background-color: black;
   color: white;
   text-decoration: none;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 6px;
-  padding-bottom: 3px;
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+  padding: 6px 50px 3px 50px;
 }
