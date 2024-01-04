@@ -78,19 +78,25 @@ header {
     color: #0A3641;
   }
 
-  header,nav,footer{
+  header,nav,.footer{
     background-color: #E0E5E0;
     color: #0A3641;
   }
 
 .footer {
   display: flex;
+
 }
 
-.footer > * {
+.footer-left, .footer-right {
+  text-align: left;
   flex: 1;
-  justify-content: space-evenly;
-  display: inline;
+  margin-left: 40px;
+}
+
+.footer-right {
+  text-align: right;
+  margin-right: 40px;
 }
 
   nav, #menu-checkbox {
@@ -117,9 +123,16 @@ header {
   }
 }
 
-.page-divider {
+.page-divider-small, .page-divider-large {
   background-color: #0A3641;
+}
+
+.page-divider-small {
   padding: 2rem;
+}
+
+.page-divider-large {
+  padding: 3rem;
 }
 
 .home-intro-section, .page-intro{
@@ -180,7 +193,7 @@ header {
   margin-left: 25%;
 }
 
-.popular-jackets {
+.popular-jackets, .products {
   flex-wrap: wrap;
 }
 
@@ -194,14 +207,48 @@ header {
   margin-left: 21%;
 }
 
-.jacket-image {
+.jacket-image-home {
   width: 70%;
   min-width: 80px;
 }
 
 .products {
+  display: flex;
   padding-top: 4rem;
-  flex-wrap: wrap;
+  justify-content:space-between;
+  max-width: 1200px;
+}
+
+.products p {
+  margin-top: -1px;
+}
+
+.product-images {
+  max-width: 100%  ;
+}
+
+.back-p {
+  margin-left: 30px;
+  font-size: 15px;
+
+}
+.back-i, .back-i:visited {
+  text-decoration: none;
+  color: black
+}
+
+.xandau-product-image{
+  margin-left: 30px;
+  max-width: 80%;
+}
+
+.all-icons {
+  width: 90px;
+}
+
+.xandau-rain-jacket {
+  display: flex;
+  flex: wrap;
 }
 
 .form__input {
@@ -252,7 +299,7 @@ h1 {
   font-size: 25px;
 }
 
-h2, h3, .h4 {
+h2, h3, .h4, .prices-home {
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
@@ -261,7 +308,7 @@ h2 {
   font-size: 20px;
 }
 
-h3{
+h3, .prices-home, .prices-jackets{
   font-size: 18px;
 }
 
