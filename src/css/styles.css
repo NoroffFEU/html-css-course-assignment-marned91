@@ -125,7 +125,8 @@ header {
 
 .page-divider-small, .page-divider-large {
   background-color: #0A3641;
-}
+  padding: 30px;
+  }
 
 .page-divider-small {
   padding: 2rem;
@@ -149,6 +150,11 @@ header {
 
 .page-intro {
   padding: 20px 6rem;
+}
+
+.page-intro p {
+  font-size: 17px;
+  max-width: 95%;
 }
 
 .home-page-main-image {
@@ -230,11 +236,12 @@ header {
 .back-p {
   margin-left: 35px;
   font-size: 15px;
+  margin-top: 30px;
 
 }
 .back-i, .back-i:visited {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .all-icons {
@@ -243,6 +250,8 @@ header {
 
 .xandau-image {
   max-width: 140%;
+  max-height: 85%;
+  margin-top: 10px;
 }
 
 .product-page {
@@ -260,12 +269,12 @@ header {
   flex: 3;
   display: flex;
   flex-direction: column;
-  margin-left: 25%;
+  margin-right: 8%;
   max-width: 700px;
 }
 
 .product-button {
-  padding-top: 13%;
+  padding-top: 21%;
 
 }
 
@@ -280,7 +289,89 @@ header {
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form__input {
+.about-part1,.about-part3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-part1-text {
+  max-width: 45rem;
+  margin-top: 5rem;
+  line-height: 50px;
+  margin-left: 17%;
+}
+
+.about-part1-text p {
+  font-size: 16px;
+}
+
+.team-photo-1 {
+  max-width: 80%;
+  margin-right: 35px;
+  margin-top: 25px;
+}
+
+.about-part2 h1 {
+margin-left: 245px;
+padding-top: 10px;
+}
+
+.about-values1, .about-values2 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-values1 div, .about-values2 div {
+  text-align: left;
+  flex: 1;
+  margin: 0px 40px 20px;
+  max-width: 30%;
+}
+
+.team-photo-2 {
+  max-width: 80%;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.about-part3-text {
+  flex: 1;
+  margin-left: 10px;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.about-part3-text p {
+  max-width: 80%;
+}
+
+.contact-content {
+  display: flex;
+}
+
+.contact-content > * {
+  flex: 1;
+}
+
+.contact-content1 {
+  flex-direction: row;
+  background-color: #A9BCBB;
+}
+.contact-image{
+  margin-left: 22%;
+  margin-top: 10px;
+  max-height: 300px;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  gap: 150px;
+  text-align: center;
+  justify-content: center;
+  line-height: 15px;
+}
+.form__input, .form {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -288,21 +379,19 @@ header {
 
 input, #sizes, textarea {
 border: none;
-border-radius: 5px;
+border-radius: 6px;
+margin: 10px 10px 10px 0px;
 }
 
-input, textarea {
+.form__input, textarea {
 width: 400px;
-padding-top: 5px;
-padding-bottom: 5px;
+padding: 10px 0px 10px 0px;
 }
 
 .contactform {
-  background-color: #A9BCBB;
   color: black;
   font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 2%;
-  padding-top: 4%;
+  margin-left: 20%;
 }
 
 .bold-p-small, .bold-p-large{
@@ -343,11 +432,6 @@ p {
   font-size: 16px;
 }
 
-.page-divider {
-  background-color: #0A3641;
-  padding: 30px;
-}
-
 .light-button{
   background-color: white;
   color: black;
@@ -362,7 +446,7 @@ p {
   font-size: 16px;
 }
 
-.dark-button {
+.dark-button, #contactform-button {
   background-color: black;
   color: white;
   text-decoration: none;
