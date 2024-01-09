@@ -6,108 +6,6 @@
 /* Feel free to add as many of these imports as you need */
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lato:wght@900&display=swap');
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0%;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #E0E5E0;
-  color: #0A3641;
-}
-
-.logo {
-  height: 70px;
-  width: 8rem;
-  margin-left: 30px;
-  }
-
-  nav {
-    margin-left: 5%;
-  }
-
-  nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-  }
-
-  nav li {
-    display: inline-block;
-    padding-inline: 0 20px;
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #0A3641;
-    font-size: 1rem;
-    display: block;
-  }
-
-  .cart-icon {
-    margin-left: auto;
-    margin-right: 30px;
-  }
-
-  .hamburger-icon {
-  left: 10px;
-  top: 25px;
-  position: flex;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  .active {
-    text-decoration: underline;
-    color: #0A3641;
-  }
-
-  header,nav,.footer{
-    background-color: #E0E5E0;
-    color: #0A3641;
-  }
-
-.footer {
-  display: flex;
-
-}
-
-.footer-left, .footer-right {
-  text-align: left;
-  flex: 1;
-  margin-left: 40px;
-}
-
-.footer-right {
-  text-align: right;
-  margin-right: 40px;
-}
-
-  nav, #menu-checkbox {
-  display: none;
-  }
-
-  #menu-checkbox:checked ~ nav {
-  display: block;
-  }
-
-
 @media (min-width: 600px){
   nav{
     position: static;
@@ -123,29 +21,22 @@ header {
   }
 }
 
-.page-divider-small, .page-divider-large {
-  background-color: #0A3641;
-  padding: 30px;
-  }
-
-.page-divider-small {
-  padding: 2rem;
-}
-
-.page-divider-large {
-  padding: 40px;
-}
-
 .home-intro-section, .page-intro{
   background-color: #0A3641;
   color: white;
   position: relative;
-
 }
 
 .home-intro-section {
   padding: 2rem;
+}
+
+.home-intro-section, .fabric-info-home, .popular-jackets-content, .products, .product-page, .product-details, .about-part1,.about-part3, .about-values1, .about-values2, .contact-content, .contact-content1, .contact-info {
   display: flex;
+}
+
+.h2-home {
+  margin-left: 6rem;
 }
 
 .page-intro {
@@ -155,119 +46,134 @@ header {
 .page-intro p {
   font-size: 17px;
   max-width: 95%;
+  margin-left: 2%;
 }
 
 .home-page-main-image {
   width: 90%;
-  height: fit-content;
 }
 
 .home-intro-text {
-  margin-left: 6%;
+  margin-left: 8%;
   width: 50%;
   min-width: 30%;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 18px;
+  line-height: 35px;
 }
 
 .home-intro-image{
-  margin-left: 6%;
+  margin-left: 5%;
 }
 
-.fabric-info-home, .popular-jackets, .products {
-  display: flex;
+.fabric-info-home, .popular-jackets-content {
   padding-top: 15px;
-  justify-content: center;
-  justify-content: space-around;
+}
+
+.fabric-info-home, .popular-jackets-content,.about-part1,.about-part3 {
   justify-content: space-between;
 }
 
-.windproof-info-home, .waterproof-info-home, .breathable-info-home, .popular-jacket-1, .popular-jacket-2, .popular-jacket-3, .products {
-  flex: 1;
+.fabric-info-home, .popular-jackets-content, .products div, .contact-info {
   text-align: center;
-  margin: auto;
-  max-width: 1000px;
 }
 
-.windproof-icon, .waterproof-icon, .breathable-icon {
-  height: 35%;
-  max-width: 35%;
+.fabric-info-home, .popular-jackets-content, .products div, .product-image, .about-values1 div, .about-values2 div, .about-part3-text, .contact-content > * {
+flex: 1;
+}
+
+.fabric-icon {
+  max-height: 80px;
+}
+
+.fabric-info-home {
+  margin: 0px 8% 0px 8%;
 }
 
 .fabric-info-home p {
-  max-width: 50%;
-  margin-left: 25%;
+  max-width: 180px;
 }
 
-.popular-jackets, .products {
-  flex-wrap: wrap;
+.popular-jackets-content, .contact-content > * {
+  margin: 0px 60px 0px 60px;
 }
 
 .popular-jackets h2 {
   flex: 100%;
-  margin-left: 6%;
 }
 
 .popular-jackets p {
-  max-width: 300px  ;
-  margin-left: 21%;
+  max-width: 270px;
+  margin-left: 25px;
 }
 
-.jacket-image-home {
-  width: 70%;
-  min-width: 80px;
+.popular-jacket-image, .product-images {
+  max-width: 100%;
 }
 
-.products {
+.popular-jackets-content,.products, .product-page, .popular-jackets-content {
+  flex-wrap: wrap;
+}
 
-  padding-top: 4rem;
-  justify-content:space-between;
-  max-width: 1200px;
+.products, .about-values1, .about-values2, .contact-content1 {
+justify-content: center;
+}
+
+.products div {
+  margin: 0px 4% 0px 4%;
 }
 
 .products p {
   margin-top: -1px;
 }
 
-.product-images {
-  max-width: 100%  ;
-}
-
 .back-p {
-  margin-left: 35px;
   font-size: 15px;
-  margin-top: 30px;
-
 }
+
+.back-p, .team-photo-2 {
+  margin-left: 35px;
+}
+
+.back-p, .contact-info {
+  margin-top: 30px;
+}
+
 .back-i, .back-i:visited {
   text-decoration: none;
+}
+
+.back-i, .back-i:visited, #sizes, .contactform {
   color: black;
 }
 
 .all-icons {
   width: 90px;
+  position: absolute;
+  left: 53%;
+  top: 40%;
+
 }
 
 .xandau-image {
   max-width: 140%;
   max-height: 85%;
+}
+
+.xandau-image, .team-photo-2, .contact-image {
   margin-top: 10px;
 }
 
 .product-page {
-  display: flex;
   max-width: 1400px;
-  flex-wrap: wrap;
 }
 
 .product-image {
-  flex: 1;
   margin-left: 36px;
 }
 
 .product-details {
   flex: 3;
-  display: flex;
   flex-direction: column;
   margin-right: 8%;
   max-width: 700px;
@@ -275,23 +181,17 @@ header {
 
 .product-button {
   padding-top: 21%;
-
 }
 
 #sizes {
   width: 200px;
   background-color: #E0E5E0;
-  color: black;
-  border: none;
   padding: 7px;
   margin-top: 1rem;
-  text-align: left;
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about-part1,.about-part3{
-  display: flex;
-  justify-content: space-between;
+#sizes, .about-values1 div, .about-values2 div {
+  text-align: left;
 }
 
 .about-part1-text {
@@ -301,80 +201,51 @@ header {
   margin-left: 17%;
 }
 
-.about-part1-text p {
-  font-size: 16px;
-}
-
 .team-photo-1 {
-  max-width: 80%;
   margin-right: 35px;
   margin-top: 25px;
 }
 
 .about-part2 h1 {
 margin-left: 245px;
-padding-top: 10px;
 }
 
-.about-values1, .about-values2 {
-  display: flex;
-  justify-content: center;
+.about-part2 h1, .form__input, .form {
+  padding-top: 10px;
 }
 
 .about-values1 div, .about-values2 div {
-  text-align: left;
-  flex: 1;
   margin: 0px 40px 20px;
   max-width: 30%;
 }
 
-.team-photo-2 {
+.team-photo-2, .team-photo-1,.about-part3-text p {
   max-width: 80%;
-  margin-left: 35px;
-  margin-top: 10px;
 }
 
 .about-part3-text {
-  flex: 1;
   margin-left: 10px;
   margin-top: 50px;
   line-height: 30px;
 }
 
-.about-part3-text p {
-  max-width: 80%;
-}
-
-.contact-content {
-  display: flex;
-}
-
-.contact-content > * {
-  flex: 1;
-}
-
 .contact-content1 {
-  flex-direction: row;
   background-color: #A9BCBB;
+  align-items: center;
 }
+
 .contact-image{
-  margin-left: 22%;
-  margin-top: 10px;
   max-height: 300px;
-  justify-content: center;
+  margin-left: 10%;
 }
 
 .contact-info {
-  display: flex;
   gap: 150px;
-  text-align: center;
-  justify-content: center;
   line-height: 15px;
 }
+
 .form__input, .form {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 input, #sizes, textarea {
@@ -384,74 +255,15 @@ margin: 10px 10px 10px 0px;
 }
 
 .form__input, textarea {
-width: 400px;
+max-width: 400px;
 padding: 10px 0px 10px 0px;
 }
 
+.form__input, textarea, .contactform {
+  width: 100%;
+}
+
 .contactform {
-  color: black;
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 20%;
-}
-
-.bold-p-small, .bold-p-large{
-  font-weight: bold;
-}
-
-.bold-p-small{
-  font-size: 15px;
-}
-
-.bold-p-large {
-  font-size: 20px;
-}
-
-.h2-home {
-  margin-left: 6rem;
-}
-
-h1 {
-  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-}
-
-h2, h3, .h4, .prices-home {
-  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-h3, .prices-home, .prices-jackets{
-  font-size: 18px;
-}
-
-p {
-  font-size: 16px;
-}
-
-.light-button{
-  background-color: white;
-  color: black;
-  text-decoration: none ;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 6px;
-  padding-bottom: 3px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-.dark-button, #contactform-button {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-  padding: 6px 49px 3px 49px;
+  padding-left: 15%;
+  padding-right: 15%;
 }

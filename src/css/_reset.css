@@ -1,0 +1,169 @@
+body {
+color: var(--color-primary);
+background-color: var(--color-secondary);
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+}
+
+body, h2, h3, .h4, .prices-home {
+font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+margin: 0%;
+}
+
+header, nav ul, .footer {
+display: flex;
+}
+
+header {
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+}
+
+.logo {
+height: 70px;
+width: 8rem;
+margin-left: 60px;
+}
+
+nav {
+margin-left: 5%;
+}
+
+nav ul {
+list-style: none;
+}
+
+nav li {
+display: inline-block;
+padding-inline: 0 30px;
+margin-right: 1rem;
+}
+
+nav a, nav li {
+font-size: 1rem;
+}
+
+nav a, #menu-checkbox:checked ~ nav {
+display: block;
+}
+
+nav a, .light-button, .dark-button, #submit-button {
+text-decoration: none;
+}
+
+nav a, .active, header,nav,.footer {
+color: #0A3641;
+}
+
+nav a, .cart-icon, .hamburger-icon {
+margin-top: 15px;
+}
+
+.cart-icon {
+margin-left: auto;
+margin-right: 60px;
+}
+
+.hamburger-icon {
+left: 10px;
+top: 25px;
+position: flex;
+}
+
+nav a:hover, .active {
+text-decoration: underline;
+}
+
+header,nav,.footer{
+background-color: #E0E5E0;
+}
+
+nav, #menu-checkbox {
+display: none;
+}
+    
+.page-divider-small, .page-divider-large {
+background-color: #0A3641;
+padding: 30px;
+}
+    
+.page-divider-small {
+padding: 2rem;
+}
+    
+.page-divider-large {
+padding: 40px;
+}
+
+.footer p {
+font-size: 12px;
+}
+
+.footer-left, .footer-right {
+text-align: left;
+flex: 1;
+margin-left: 35px;
+}
+
+.footer-right {
+text-align: right;
+margin-right: 35px;
+}
+
+.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home {
+font-weight: bold;
+}
+
+.bold-p-small{
+font-size: 15px;
+}
+
+.bold-p-large, h2 {
+font-size: 20px;
+}
+
+h1 {
+font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+}
+
+h3, .prices-home, .prices-jackets{
+font-size: 18px;
+}
+
+p, .light-button {
+font-size: 16px;
+}
+
+#submit-button {
+padding: 10px 49px 10px 49px;
+}
+
+.light-button, .dark-button, #submit-button {
+border-style: solid;
+border-radius: 10px;
+}
+
+.light-button{
+background-color: white;
+color: black;
+padding: 6px 4% 3px 4%;
+border-color: white;
+}
+
+.dark-button, #submit-button {
+background-color: black;
+color: white;
+border-color: black;
+}
+
+.dark-button {
+padding: 6px 49px 3px 49px;
+}
