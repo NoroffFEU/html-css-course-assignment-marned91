@@ -295,7 +295,7 @@ padding: 10px 0px 10px 0px;
   }
 
   .popular-jackets-image {
-    width: 80%;
+    display: none;
   }
 
   }
