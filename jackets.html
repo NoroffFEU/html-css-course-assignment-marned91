@@ -7,23 +7,30 @@
   <title>Rainydays | Jackets</title>
   <link rel="reset-stylesheet" href="src/css/_reset.css">
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="mediaqueries-stylesheet" href="src/css/_mediaqueries.css">
   <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <input type="checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-    <img src="assets/images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"/>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+    </div>
+    <div class="logo">
+      <img src="assets/images/RainyDays_Logo.png" alt="Rainydays logo" class="logo-image"/>
+    </div>
+    <div class="nav">
       <nav>
         <ul>
-            <li><a href="index.html">HOME</a> </li>
-            <li><a href="jackets.html" class="active" >JACKETS</a> </li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a> </li>
+          <li><a href="jackets.html" class="active">JACKETS</a> </li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
+    </div >
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping" class="cart-icon"></i>
       </div>
   </header>
   <main>

@@ -7,23 +7,30 @@
   <title>Rainydays | About</title>
   <link rel="reset-stylesheet" href="src/css/_reset.css">
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="mediaquaries-stylesheet" href="src/css/_mediaquaries.css">
   <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <input type="checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-    <img src="assets/images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"/>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+    </div>
+    <div class="logo">
+      <img src="assets/images/RainyDays_Logo.png" alt="Rainydays logo" class="logo-image"/>
+    </div>
+    <div class="nav">
       <nav>
         <ul>
-            <li><a href="index.html">HOME</a> </li>
-            <li><a href="jackets.html">JACKETS</a> </li>
-            <li><a href="about.html" class="active" >ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a> </li>
+          <li><a href="jackets.html">JACKETS</a> </li>
+          <li><a href="about.html"class="active">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
+    </div >
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping" class="cart-icon"></i>
       </div>
   </header>
   <main>
@@ -45,25 +52,21 @@
         <div class="page-divider-small"></div>
         <section class="about-part2">
         <h1>What Can You Expect?</h1>
-        <div class="about-values1">
-          <div class="values-durability">
+          <div class="values">
             <h2>UNPARALLELED DURABILITY</h2>
             <p>Rainydays jackets are crafted with precision and high-quality materials to ensure lasting resilience, standing up to the challenges of diverse weather conditions and outdoor activities.</p>
         </div>
-        <div class="values-comfort">
+        <div class="values">
           <h2>ALL-WEATHER COMFORT</h2>
           <p>Experience a new level of comfort in any weather. Our mid-range jackets are designed to be breathable, waterproof, and windproof, keeping you comfortable and protected in varying conditions.</p>
       </div>
-        </div>
-        <div class="about-values2">
-          <div class="values-versatile">
+          <div class="values">
             <h2>VERSATILE STYLE</h2>
             <p>Whether navigating city streets or exploring rugged trails, Rainydays jackets seamlessly blend durability with contemporary style. Elevate your outdoor wardrobe with jackets that effortlessly transition from urban adventures to wilderness explorations.</p>
         </div>
-        <div class="values-sustainable">
+        <div class="values">
             <h2>SUSTAINABLE PERFORMANCE</h2>
             <p>Embrace sustainable outdoor living with Rainydays. Our commitment to eco-friendly practices is reflected in every jacket, ensuring that you not only enjoy premium performance but also contribute to a more sustainable future.</p>
-        </div>
         </div>
       </section>
       <div class="page-divider-small"></div>

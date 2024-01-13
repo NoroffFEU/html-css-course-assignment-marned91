@@ -5,33 +5,21 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lato:wght@900&display=swap');
-
-@media (min-width: 600px){
-  nav{
-    position: static;
-    display: block;
-    margin-top: 0%;
-    text-align: left;
-  }
-  .hamburger-icon {
-    display: none;
-    }  
-  .home-intro-section {
-  flex-direction: row;
-  }
-}
+@import url("./_mediaqueries.css");
 
 .home-intro-section, .page-intro{
   background-color: #0A3641;
   color: white;
-  position: relative;
 }
 
 .home-intro-section {
-  padding: 2rem;
+  max-width: fit-content;
+  grid-column-gap: 10px;
+  text-align: left;
+  padding: 30px 0px 30px 0px;
 }
 
-.home-intro-section, .product-page, .product-details, .about-part1,.about-part3, .about-values1, .about-values2, .contact-content, .contact-content1, .contact-info {
+.xanadu-page, .product-details, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info {
   display: flex;
 }
 
@@ -49,42 +37,39 @@
 }
 
 .home-page-main-image {
-  width: 90%;
+  max-width: 400px;
+}
+
+.home-intro-image {
+  margin-left: -60px;
 }
 
 .home-intro-text {
-  margin-left: 8%;
-  width: 50%;
+  margin-left: 15%;
+  max-width: 73%;
   min-width: 30%;
-  margin-top: 40px;
-  line-height: 35px;
+  line-height: 40px;
+  grid-column: 1 / span 2;
+  margin-top: 20px;
 }
 
 .home-intro-text p, .page-intro p {
   font-size: 17px;
 }
 
-.home-intro-image{
-  margin-left: 5%;
+.home-intro-section, .fabric-info-home, .product-list, .popular-jackets {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .fabric-info-home, .product-list, .popular-jackets {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
   max-width: 1200px;
-  grid-column-gap: 200px;
   text-align: center;
 }
 
 .fabric-info-home, .popular-jackets {
   margin: 20px auto;
-}
-
-
-.product-list {
-  margin: 5% auto;
-  grid-gap: 30px;
-  grid-column-gap: 150px;
+  grid-column-gap: 200px;
 }
 
 .windproof-info-home, .waterproof-info-home, .breathable-info-home {
@@ -96,7 +81,7 @@
   margin-left: 100px;
 }
 
-.popular-jackets h2 {
+.popular-jackets h2,.about-part2 h1 {
   grid-column: -1/1;
 }
 
@@ -107,13 +92,18 @@
 
 .about-part1,.about-part3 {
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .products div, .contact-info {
   text-align: center;
 }
 
-.products div, .product-image, .about-values1 div, .about-values2 div, .about-part3-text, .contact-content > * {
+.products {
+  align-items: center;
+}
+
+.about-part3-text, .contact-content > * {
 flex: 1;
 }
 
@@ -129,22 +119,13 @@ flex: 1;
   max-width: 100%;
 }
 
-.product-page {
-  flex-wrap: wrap;
-}
-
-.about-values1, .about-values2, .contact-content1 {
+.contact-content1 {
 justify-content: center;
 }
 
 .product-list {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  max-width: 1200px;
   margin: 5% auto;
   grid-gap: 30px;
-  grid-column-gap: 150px;
-  text-align: center;
 }
 
 .back-p {
@@ -169,7 +150,6 @@ justify-content: center;
 
 .all-icons {
   width: 90px;
-  position: absolute;
   left: 53%;
   top: 40%;
 
@@ -185,7 +165,7 @@ justify-content: center;
 }
 
 .product-page {
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .product-image {
@@ -193,14 +173,14 @@ justify-content: center;
 }
 
 .product-details {
-  flex: 3;
+  flex: 1;
   flex-direction: column;
   margin-right: 8%;
   max-width: 700px;
 }
 
 .product-button {
-  padding-top: 21%;
+  padding-top: 26%;
 }
 
 #sizes {
@@ -208,9 +188,6 @@ justify-content: center;
   background-color: #E0E5E0;
   padding: 7px;
   margin-top: 1rem;
-}
-
-#sizes, .about-values1 div, .about-values2 div {
   text-align: left;
 }
 
@@ -221,22 +198,25 @@ justify-content: center;
   margin-left: 17%;
 }
 
+.about-part2 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 1000px;
+  margin-left: 20%;
+  padding: 20px, 0px;
+}
+
+.values {
+  max-width: 70%;
+}
+
 .team-photo-1 {
   margin-right: 35px;
   margin-top: 25px;
 }
 
-.about-part2 h1 {
-margin-left: 245px;
-}
-
-.about-part2 h1, .form__input, .form {
+.form__input, .form {
   padding-top: 10px;
-}
-
-.about-values1 div, .about-values2 div {
-  margin: 0px 40px 20px;
-  max-width: 30%;
 }
 
 .team-photo-2, .team-photo-1,.about-part3-text p {
@@ -244,8 +224,6 @@ margin-left: 245px;
 }
 
 .about-part3-text {
-  margin-left: 10px;
-  margin-top: 50px;
   line-height: 30px;
 }
 
@@ -287,3 +265,36 @@ padding: 10px 0px 10px 0px;
   padding-left: 15%;
   padding-right: 15%;
 }
+
+/*mobile and small tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .product-list {
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 5px;
+      max-width: 600px;
+      min-width: 300px;
+      margin: 10px;
+      align-items: center;
+  }
+
+  .product-images {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .home-intro-section {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 1250px) {
+
+}
+
