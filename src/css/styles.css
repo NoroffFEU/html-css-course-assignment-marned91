@@ -368,7 +368,7 @@ padding: 10px 0px 10px 0px;
 
   .xanadu-details {
     max-width: 600px;
-    margin: 0px 35px;
+    justify-content: center;
   }
 
   .xanadu-info1 {
@@ -376,14 +376,13 @@ padding: 10px 0px 10px 0px;
   }
 
   .xanadu-info2 {
-    position: absolute;
     margin-top: 50%;
   }
 
   .product-add-size-cart {
-    position: absolute;
     gap: 10px;
     margin-top: 85px;
+    margin-left: -12px  ;
   }
 
   #sizes {
