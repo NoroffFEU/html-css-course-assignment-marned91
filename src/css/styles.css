@@ -19,7 +19,7 @@
   padding: 30px 0px;
 }
 
-.xanadu-page, .product-details, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info {
+.xanadu-page, .xanadu-details, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info {
   display: flex;
 }
 
@@ -132,7 +132,7 @@ justify-content: center;
 }
 
 .back-p, .team-photo-2 {
-  margin-left: 35px;
+  margin-left: 65px;
 }
 
 .back-p, .contact-info {
@@ -154,40 +154,39 @@ justify-content: center;
 
 }
 
-.xandau-image {
-  max-width: 140%;
-  max-height: 85%;
+.xanadu-image {
+  margin-left: 60px;
 }
 
-.xandau-image, .team-photo-2, .contact-image {
+.xanadu-jacket {
+  max-width: 140%;
+}
+
+.xanadu-jacket, .team-photo-2, .contact-image {
   margin-top: 10px;
 }
 
-.product-page {
-  max-width: 1200px;
-}
-
-.product-image {
-  margin-left: 36px;
-}
-
-.product-details {
+.xanadu-details {
   flex: 1;
   flex-direction: column;
-  margin-right: 8%;
+  margin-top: 7%;
   max-width: 700px;
+  margin-left: 60px;
 }
 
-.product-button {
-  padding-top: 26%;
+.product-add-size-cart {
+  display: flex;
+  padding-top: 20px;
+  gap: 30px;
+  align-items: center;
+  margin-left: -5px;
 }
 
 #sizes {
   width: 200px;
   background-color: #E0E5E0;
-  padding: 7px;
-  margin-top: 1rem;
-  text-align: left;
+  padding: 13px;
+  font-size: 15px;
 }
 
 .about-part1-text {
@@ -247,8 +246,8 @@ justify-content: center;
 
 input, #sizes, textarea {
 border: none;
-border-radius: 6px;
-margin: 10px 10px 10px 0px;
+border-radius: 10px;
+margin: 5px;
 }
 
 .form__input, textarea {
@@ -267,35 +266,128 @@ padding: 10px 0px 10px 0px;
 
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
-  .product-list {
-      grid-template-columns: repeat(2,1fr);
-      grid-gap: 5px;
-      margin: 10px auto;
+  .page-intro {
+    padding: 20px;
+    margin: auto;
   }
-
-  .product-images {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      overflow: hidden;
+  
+  .page-intro p {
+    max-width: 95%;
   }
-
+  
   .home-intro-section, .fabric-info-home, .popular-jackets {
     grid-template-columns: 1fr;
-    margin: auto;
-
+    max-width: 600px;
   }
 
-  .home-intro-text {
-    margin: 20px 25px;
+  .home-intro-section {
+    padding: 10px 0;
+  }
+
+  .home-page-main-image {
+    max-width: 290px;
   }
 
   .home-intro-image {
     margin: auto;
   }
 
+  .home-intro-text {
+    max-width: 80%;
+    line-height: 30px;
+    margin: 10px auto;
+  }
+
+  .fabric-info-home {
+    gap: 30px;
+    margin: 20px 35px;
+  }
+
+  .windproof-info-home, .waterproof-info-home, .breathable-info-home {
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .fabric-icon {
+    max-height: 60px;
+  }
+
+  .popular-jackets {
+    max-width: 600px;
+    text-align: left;
+    margin: 15px 5px;
+    gap: 10px;
+  }
+  
+  .popular-jackets div, .popular-jackets h2 {
+    margin: auto;
+  }
+
+  .popular-jackets p {
+    max-width: 350px;
+    margin: 0px;
+  }
+
   .popular-jackets-image {
     display: none;
+  }
+
+  .popular-jackets-image-small {
+    max-width: 100%;
+  }
+  
+  .product-list {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    margin: 10px auto;
+  }
+
+  .products {
+    margin: 0px 10px;
+  }
+
+  .product-images {
+    max-width: 100%;
+  }
+
+  .back-p {
+    margin: 15px;
+  }
+
+  .xanadu-page {
+    flex-wrap: wrap;
+  }
+
+  .xanadu-image {
+    margin: 0px 10px;
+  }
+
+  .xanadu-jacket {
+    max-width: 100%;
+  }
+
+  .xanadu-details {
+    max-width: 600px;
+    margin: 0px 35px;
+  }
+
+  .xanadu-info1 {
+    line-height: 12px;
+  }
+
+  .xanadu-info2 {
+    position: absolute;
+    margin-top: 50%;
+  }
+
+  .product-add-size-cart {
+    position: absolute;
+    gap: 10px;
+    margin-top: 85px;
+  }
+
+  #sizes {
+    max-width: 155px;
   }
 
   }
@@ -305,11 +397,91 @@ padding: 10px 0px 10px 0px;
 
 /*smaller and lagrer tablets*/
 @media screen and (min-width: 601px) and (max-width: 900px) {
+  .page-intro {
+    padding: 30px;
+    margin: auto;
+  }
+  
+  .page-intro p {
+    max-width: 100%;
+  }
+  
+  .popular-jackets-image{
+    display: none;
+  }
+
+  .home-intro-section, .fabric-info-home, .popular-jackets {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+  }
+
+  .home-intro-section {
+    padding: 15px 0;
+  }
+
+  .home-intro-text {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+
+  .home-page-main-image {
+    max-width: 400px;
+  }
+
+  .home-intro-image {
+    margin: 10px auto;
+  }
+
+  .fabric-info-home {
+    gap: 30px;
+    margin: 30px 50px;
+  }
+
+  .windproof-info-home, .waterproof-info-home, .breathable-info-home {
+    max-width: 900px;
+    text-align: left;
+  }
+
+  .fabric-icon {
+    max-height: 70px;
+  }
+
+  .popular-jackets {
+    max-width: 800px;
+    text-align: left;
+    gap: 20px;
+  }
+  
+  .popular-jackets-image-small {
+    width: 85%;
+  }
+
+  .popular-jackets p {
+    max-width: 450px;
+    margin: 0px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    margin: 20px auto;
+  }
+
+  .products {
+    margin: 0px 20px;
+  }
+
+  .product-images {
+    max-width: 100%;
+  }
 
 }
 
 /*laptop and desktop*/
-@media screen and (min-width: 901px) and (max-width: 1250px) {
+@media screen and (min-width: 901px) and (max-width: 20000px) {
+  .popular-jackets-image-small {
+    display: none;
+  }
 
 }
 
