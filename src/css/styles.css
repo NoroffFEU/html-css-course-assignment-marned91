@@ -162,10 +162,10 @@ flex: 1;
 
 .xanadu-details {
   flex-direction: column;
-  margin-top: 7%;
+  margin-top: 5%;
   max-width: 700px;
   margin-left: 20px;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .xanadu-info2 {
