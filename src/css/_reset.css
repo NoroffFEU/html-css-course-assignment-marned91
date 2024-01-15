@@ -250,6 +250,10 @@ padding: 10px;
         .page-divider-small {
           padding: 20px;
         }
+
+        .dark-button {
+          max-width: 60%;
+        }
     }
   
   
