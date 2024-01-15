@@ -14,28 +14,62 @@ overflow-x: hidden;
 margin: 0%;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .footer, header {
 display: flex;
 }
 
-footer {
-position: relative;
-margin-top: 100vh;
-}
-
 header {
-padding: 4px;
+height: 85px;
 }
 
 .logo {
 flex: none;
 margin-left: 80px;
+margin-top: 5px;
 }
 
-.nav {
+.hamburger-menu:has(#menu-checkbox:checked) ~ .nav-mobile {
+  display: inline-block;
+  }
+
+.nav-mobile {
+  position: absolute;
+  top: 86px;
+  width: 100%;
+  margin-left: -5px;
+  box-shadow: 0px 4px black;
+}
+
+.nav-mobile ul, .nav-mobile nav, .nav-mobile li, .nav-mobile{
+  background-color: #658D7A;
+}
+
+.nav-mobile a:visited {
+  color: black ;
+}
+
+.nav-mobile li {
+  padding-inline: 0 10px;
+}
+
+.nav-mobile ul {
+  padding: 0px 20px;
+  margin-left: 15px;
+}
+
+.nav-mobile nav {
+  text-align: center;
+}
+
+.nav-desktop {
 flex-grow: 5;
 justify-content: flex-start;
 margin-left: 30px;
+margin-top: 15px;
 }
 
 .cart {
@@ -43,7 +77,7 @@ flex-grow: 1;
 margin-left: 100px;
 }
 
-nav li {
+.nav-desktop li {
 display: inline-block;
 padding-inline: 0px 40px;
 }
@@ -56,27 +90,19 @@ margin-top: 15px;
 margin-top: 30px;
 }
 
-nav ul {
-max-width: 100%;
-}
-
 nav a, nav li {
 font-size: 1rem;
-}
-
-#menu-checkbox:checked ~ nav {
-display: block;
 }
 
 .light-button, .dark-button, #submit-button, nav a{
 text-decoration: none;
 }
 
-.active, header,nav,.footer, nav a:visited {
+.active-desktop, header,nav,.footer, .nav-desktop a:visited {
 color: #0A3641;
 }
 
-nav a:hover, .active {
+nav a:hover, .active-desktop {
 text-decoration: underline;
 }
 
@@ -174,43 +200,39 @@ padding: 10px;
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
         
+        .nav-mobile, .nav-desktop {
+          display: none;
+        }
+
         header {
         padding: 5px;
-        }
-        
-        .nav {
-        flex-wrap: wrap;
+        display: flex;
         }
 
         .logo {
-        flex: none;
-        margin-left: 80px;
+        display: flex;
+        flex: 1;
         justify-content: center;
+        margin: auto;
         }
-        
-        .nav {
-        flex: 100%;
+
+        .hamburger-menu {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        margin: auto;
         }
         
         .cart {
-        margin-left: 100px;
+        display: flex;
+        flex: 1;
+        margin: auto;
+        justify-content: center;
         }
         
         nav li {
         display: inline-block;
-        padding-inline: 0px 20px;
-        }
-        
-        .nav {
-        margin-top: 15px;
-        }
-        
-        .cart {
-        margin-top: 30px;
-        }
-        
-        nav ul {
-        max-width: 100%;
+        padding:  0px 20px;
         }
         
         nav a, nav li {
@@ -235,19 +257,55 @@ padding: 10px;
   
   /*smaller and lagrer tablets*/
   @media screen and (min-width: 601px) and (max-width: 900px) {
-    .popular-jackets-image{
+    .popular-jackets-image, .nav-desktop, .nav-mobile{
       display: none;
     }
+
+    header {
+    padding: 5px;
+    display: flex;
+    }
+
+    .logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: auto;
+    }
+
+    .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: auto;
+    }
+    
+    .cart {
+    display: flex;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    }
+    
+    nav li {
+    display: inline-block;
+    padding:  0px 20px;
+    }
+    
+    nav a, nav li {
+    font-size: 1rem;
+    }
+
+    .nav-mobile li {
+      padding-inline: 0 20px;
+    }
+
   }
   
   /*laptop and desktop*/
   @media screen and (min-width: 901px) and (max-width: 20000px) {
-    .popular-jackets-image-small {
+    .popular-jackets-image-small, .hamburger-icon, .nav-mobile {
       display: none;
-    }
-
-    .hamburger-icon {
-        display: none;
     }
   
   }
