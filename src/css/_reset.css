@@ -147,11 +147,7 @@ p, .light-button {
 font-size: 16px;
 }
 
-#submit-button {
-padding: 10px 49px 10px 49px;
-}
-
-.light-button, .dark-button, #submit-button {
+.light-button, .dark-button, .dark-button-submit {
 border-style: none;
 border-radius: 10px;
 }
@@ -163,12 +159,12 @@ padding: 6px 4% 3px 4%;
 border-color: white;
 }
 
-.dark-button, #submit-button {
+.dark-button, .dark-button-submit {
 background-color: black;
 color: white;
 }
 
-.dark-button {
+.dark-button, .dark-button-submit {
 width: 200px;
 text-align: center;
 font-size: 15px;
@@ -227,6 +223,10 @@ padding: 10px;
 
         .dark-button {
         max-width: 140px;
+        }
+
+        .page-divider-small {
+          padding: 20px;
         }
     }
   
