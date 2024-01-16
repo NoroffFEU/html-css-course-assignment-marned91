@@ -313,7 +313,9 @@ padding: 10px 0px;
     margin: 20px auto;
   }
 
-  .windproof-info-home, .waterproof-info-home, .breathable-info-home {
+  .windproof-info-home, .waterproof-info-home, .breathable-info-home, .xanadu-info1 {
+    text-align: left;
+    margin: 0px 30px;
   }
 
   .fabric-icon {
@@ -373,7 +375,6 @@ padding: 10px 0px;
 
   .xanadu-info1 {
     line-height: 12px;
-    margin: 0px 30px;
   }
 
   .xanadu-info2 {
@@ -522,6 +523,7 @@ padding: 10px 0px;
   .windproof-info-home, .waterproof-info-home, .breathable-info-home {
     max-width: 900px;
     text-align: left;
+    margin: 0px 30px;
   }
 
   .fabric-icon {
@@ -682,6 +684,10 @@ padding: 10px 0px;
 
   .about-part3-text p {
     max-width: 85%;
+  }
+
+  .fabric-info-home div {
+    margin: auto;
   }
 
 }
