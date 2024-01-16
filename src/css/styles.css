@@ -83,10 +83,6 @@
   grid-column-gap: 200px;
 }
 
-.fabric-info-home div {
-  margin: auto;
-}
-
 .windproof-info-home, .waterproof-info-home, .breathable-info-home {
   max-width: 200px;
 }
@@ -314,11 +310,10 @@ padding: 10px 0px;
   }
 
   .fabric-info-home {
-    margin: 20px 35px;
+    margin: 20px auto;
   }
 
   .windproof-info-home, .waterproof-info-home, .breathable-info-home {
-    text-align: left;
   }
 
   .fabric-icon {
@@ -521,7 +516,7 @@ padding: 10px 0px;
   }
 
   .fabric-info-home {
-    margin: 30px 50px;
+    margin: 30px auto;
   }
 
   .windproof-info-home, .waterproof-info-home, .breathable-info-home {
