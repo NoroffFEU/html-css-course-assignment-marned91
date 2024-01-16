@@ -101,7 +101,7 @@
 
 .popular-jackets p {
   max-width: 300px;
-  margin-left: 20px;
+  margin: auto;
 }
 
 .about-part1,.about-part3 {
@@ -280,7 +280,7 @@ padding: 10px 0px;
     padding: 20px;
   }
 
-  .page-intro, .home-intro-image, .popular-jackets div, .popular-jackets h2 {
+  .page-intro, .home-intro-image, .popular-jackets, .popular-jackets h2 {
     margin: auto;
   }
   
@@ -317,7 +317,7 @@ padding: 10px 0px;
     margin: 20px 35px;
   }
 
-  .windproof-info-home, .waterproof-info-home, .breathable-info-home, .popular-jackets {
+  .windproof-info-home, .waterproof-info-home, .breathable-info-home {
     text-align: left;
   }
 
@@ -334,7 +334,7 @@ padding: 10px 0px;
   }
 
   .popular-jackets p {
-    margin: 0px;
+    margin: auto;
   }
 
   .popular-jackets p, .contact-image {
@@ -354,8 +354,10 @@ padding: 10px 0px;
     grid-gap: 5px;
   }
 
-  .products-info-text {
-    max-width: 20%;
+  .products p {
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
   }
 
   .products, .xanadu-image {
@@ -495,6 +497,10 @@ padding: 10px 0px;
 
   .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2 {
     grid-template-columns: 1fr;
+  }
+
+  .popular-jackets {
+    margin: 10px auto;
   }
 
   .home-intro-section {

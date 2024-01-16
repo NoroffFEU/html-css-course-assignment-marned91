@@ -148,7 +148,7 @@ text-align: right;
 margin-right: 35px;
 }
 
-.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home {
+.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .prices-jackets {
 font-weight: bold;
 }
 
@@ -249,6 +249,11 @@ padding: 10px;
 
     .page-divider-small {
       padding: 20px;
+    }
+    
+    .prices-jackets{
+      font-size: 16px;
+      font-weight: bold;
     }
   }
   
