@@ -130,7 +130,7 @@ padding: 2rem;
 }
     
 .page-divider-large {
-padding: 40px;
+padding: 35px;
 }
 
 .footer p {
@@ -200,64 +200,57 @@ padding: 10px;
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
         
-        .nav-mobile, .nav-desktop {
-          display: none;
-        }
-
-        header {
-        padding: 5px;
-        display: flex;
-        }
-
-        .logo {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        margin: auto;
-        }
-
-        .hamburger-menu {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-        margin: auto;
-        }
-        
-        .cart {
-        display: flex;
-        flex: 1;
-        margin: auto;
-        justify-content: center;
-        }
-        
-        nav li {
-        display: inline-block;
-        padding:  0px 20px;
-        }
-        
-        nav a, nav li {
-        font-size: 1rem;
-        }
-
-        .footer {
-        font-size: 6px;
-        }
-
-        .dark-button {
-        max-width: 140px;
-        font-size: 13px;
-        }
-
-        .page-divider-small {
-          padding: 20px;
-        }
-
-        .dark-button {
-          max-width: 60%;
-        }
+      .nav-mobile, .nav-desktop {
+      display: none;
     }
-  
-  
+
+      header {
+      padding: 5px;
+      display: flex;
+    }
+
+      .logo {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      margin: auto;
+    }
+
+      .hamburger-menu {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin: auto;
+    }
+        
+      .cart {
+      display: flex;
+      flex: 1;
+      margin: auto;
+      justify-content: center;
+    }
+        
+      nav li {
+      display: inline-block;
+      padding:  0px 20px;
+    }
+        
+      nav a, nav li {
+      font-size: 1rem;
+    }
+
+    .footer {
+      font-size: 6px;
+    }
+
+    .dark-button {
+      font-size: 13px;
+    }
+
+    .page-divider-small {
+      padding: 20px;
+    }
+  }
   
   
   /*smaller and lagrer tablets*/
