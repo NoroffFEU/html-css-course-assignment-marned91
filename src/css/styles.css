@@ -4,7 +4,6 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
-@import url("./_mediaqueries.css");
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lato:wght@900&display=swap');
 
 .home-intro-section, .page-intro{
@@ -72,7 +71,7 @@
 }
 
 .fabric-info-home, .product-list, .popular-jackets {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 .fabric-info-home, .product-list, .popular-jackets, .products div, .contact-info {
@@ -641,7 +640,6 @@ padding: 10px 0px;
   }
 
 }
-
 
 
 /*laptop and desktop*/
