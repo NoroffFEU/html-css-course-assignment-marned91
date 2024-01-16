@@ -106,7 +106,10 @@
 
 .about-part1,.about-part3 {
   justify-content: space-between;
-  flex-direction: row;
+}
+
+.about-part3, .product-add-size-cart, .product-list {
+  gap: 30px;
 }
 
 .products, .product-add-size-cart {
@@ -127,7 +130,6 @@ flex: 1;
 
 .product-list {
   margin: 5% auto;
-  grid-gap: 30px;
 }
 
 .back-p, #sizes {
@@ -188,7 +190,6 @@ flex: 1;
 }
 
 .product-add-size-cart {
-  gap: 30px;
   margin: 10px 5px 0px -5px;
   justify-content: left;
 }
@@ -206,7 +207,7 @@ flex: 1;
 .about-part1-text {
   max-width: 45rem;
   line-height: 50px;
-  margin: 5rem 0px 0px 17%;
+  margin: 3rem 0px 0px 17%;
 }
 
 .about-part2 {
@@ -663,6 +664,19 @@ padding: 10px 0px;
   .xanadu-info2 {
     margin-right: 10px;
     max-width: 80%;
+  }
+
+  .about-part1-text {
+    max-width: 47%;
+    margin-left: 13%;
+  }
+
+  .about-part3-text {
+    margin-top: 40px;
+  }
+
+  .about-part3-text p {
+    max-width: 85%;
   }
 
 }
