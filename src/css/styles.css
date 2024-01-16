@@ -354,6 +354,10 @@ padding: 10px 0px;
     grid-gap: 5px;
   }
 
+  .products-info-text {
+    max-width: 20%;
+  }
+
   .products, .xanadu-image {
     margin: 0px 10px;
   }
