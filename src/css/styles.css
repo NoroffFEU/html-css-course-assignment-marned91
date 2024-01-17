@@ -400,6 +400,7 @@ padding: 10px;
     font-size: 13px;
     margin: 1px;
     padding: 12px;
+    resize: vertical;
   }
 
   .about-part1,.about-part3, .contact-content  {
