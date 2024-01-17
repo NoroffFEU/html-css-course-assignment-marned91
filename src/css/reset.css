@@ -36,10 +36,6 @@ margin-top: 5px;
   display: inline-block;
   }
 
-.hamburger-icon {
-  max-width: 50px;
-}
-
 .nav-mobile {
   position: absolute;
   top: 86px;
@@ -225,6 +221,10 @@ padding: 10px;
       justify-content: center;
       flex: 1;
       margin: auto;
+    }
+
+    .hamburger-icon {
+      max-width: 50px;
     }
         
       .cart {
