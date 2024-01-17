@@ -4,7 +4,7 @@ background-color: var(--color-secondary);
 min-height: 100vh;
 }
 
-body, h2, h3, .h4, .prices-home, .contactform h1 {
+body, h2, h3, .h4, .prices-home, .contactform h1, .contactform label {
 font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -121,7 +121,6 @@ width: 8rem;
 .page-divider-small, .page-divider-large {
 background-color: #0A3641;
 padding: 30px;
-max-width: 20000px;
 }
     
 .page-divider-small {
@@ -151,7 +150,7 @@ margin-right: 35px;
 font-weight: bold;
 }
 
-.bold-p-small{
+.bold-p-small {
 font-size: 15px;
 }
 
@@ -168,7 +167,7 @@ h3, .prices-home, .prices-jackets, .contactform h1{
 font-size: 18px;
 }
 
-p, .light-button {
+p, .light-button, .contactform label, .form__input {
 font-size: 16px;
 }
 

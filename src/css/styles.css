@@ -223,7 +223,7 @@ flex: 1;
   margin-top: 25px;
 }
 
-.team-photo-2, .team-photo-1 {
+.team-photo-2, .team-photo-1, .contactform {
   max-width: 80%;
 }
 
@@ -264,7 +264,10 @@ padding: 10px;
 
 .contactform {
   flex-direction: column;
-  width: 80%;
+}
+
+.contactform label, .contactform h1 {
+  margin-left: 9px;
 }
 
 /*mobile and small tablets*/
