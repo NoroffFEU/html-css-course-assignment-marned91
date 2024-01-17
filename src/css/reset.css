@@ -36,6 +36,10 @@ margin-top: 5px;
   display: inline-block;
   }
 
+.hamburger-icon {
+  max-width: 50px;
+}
+
 .nav-mobile {
   position: absolute;
   top: 86px;
