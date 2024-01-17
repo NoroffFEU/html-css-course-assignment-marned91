@@ -48,7 +48,7 @@ margin-top: 5px;
   background-color: #658D7A;
 }
 
-.nav-mobile a:visited {
+.nav-mobile a:visited, .nav-mobile a:link {
   color: black ;
 }
 
@@ -98,7 +98,7 @@ font-size: 1rem;
 text-decoration: none;
 }
 
-.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link, .nav-mobile a:link {
+.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link {
 color: #0A3641;
 }
 
