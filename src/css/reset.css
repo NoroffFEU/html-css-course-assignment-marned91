@@ -98,7 +98,7 @@ font-size: 1rem;
 text-decoration: none;
 }
 
-.active-desktop, header,nav,.footer, .nav-desktop a:visited, .active-desktop a:active {
+.active-desktop, header,nav,.footer, .nav-desktop a:visited, .active-desktop a:link {
 color: #0A3641;
 }
 
@@ -256,7 +256,7 @@ padding: 10px;
       font-weight: bold;
     }
 
-    .active-mobile a:active {
+    .active-mobile a:link {
       color: #0A3641;
     }
   }
@@ -307,7 +307,7 @@ padding: 10px;
       padding-inline: 0 20px;
     }
 
-    .active-mobile a:active {
+    .active-mobile a:link {
       color: #0A3641;
     }
 
