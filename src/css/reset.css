@@ -98,7 +98,7 @@ font-size: 1rem;
 text-decoration: none;
 }
 
-.active-desktop, header,nav,.footer, .nav-desktop a:visited, .active-desktop a:link, .nav-desktop li, .nav-mobile li, .nav-desktop ul, .nav-mobile ul {
+.active-desktop, header, nav,.footer, .nav-desktop a:visited, .active-desktop a:link, .nav-desktop li, .nav-mobile li, .nav-desktop ul, .nav-mobile ul {
 color: #0A3641;
 }
 
