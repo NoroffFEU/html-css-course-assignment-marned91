@@ -4,7 +4,7 @@ background-color: var(--color-secondary);
 min-height: 100vh;
 }
 
-body, h2, h3, .h4, .prices-home {
+body, h2, h3, .h4, .prices-home, .contact-content1 h1 {
 font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -148,7 +148,7 @@ text-align: right;
 margin-right: 35px;
 }
 
-.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .prices-jackets {
+.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .prices-jackets, .contact-content1 h1 {
 font-weight: bold;
 }
 
@@ -165,7 +165,7 @@ font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 font-size: 25px;
 }
 
-h3, .prices-home, .prices-jackets{
+h3, .prices-home, .prices-jackets, .contact-content1 h1{
 font-size: 18px;
 }
 
