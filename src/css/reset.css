@@ -197,6 +197,10 @@ font-size: 15px;
 padding: 10px;
 }
 
+.dark-button-submit {
+  margin-top: 15px;
+}
+
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
         
