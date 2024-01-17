@@ -222,11 +222,6 @@ flex: 1;
   margin-top: 25px;
 }
 
-.form__input, .form {
-  padding-top: 10px;
-  padding: 10px 5px;
-}
-
 .team-photo-2, .team-photo-1 {
   max-width: 80%;
 }
@@ -263,7 +258,7 @@ margin: 5px;
 }
 
 .form__input, textarea {
-padding: 10px 0px;
+padding: 10px;
 }
 
 .contactform {
