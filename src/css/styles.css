@@ -13,8 +13,6 @@
 
 .home-intro-section {
   grid-column-gap: 10px;
-  padding: 30px 0px;
-  text-align: left;
 }
 
 .xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform {
@@ -51,11 +49,10 @@
 }
 
 .home-intro-text {
-  margin-left: 15%;
   max-width: 73%;
   line-height: 40px;
   grid-column: 1 / span 2;
-  margin-top: 20px;
+  margin: 20px 0px 25px 15%;
 }
 
 .home-intro-text p, .page-intro p {
@@ -70,29 +67,24 @@
   grid-template-columns: repeat(3,1fr);
 }
 
-.fabric-info-home, .product-list, .popular-jackets {
-  max-width: 1300px;
-}
-
 .fabric-info-home, .product-list, .popular-jackets, .products div, .contact-info {
   text-align: center;
 }
 
 .fabric-info-home, .popular-jackets {
-  margin: 20px auto;
-  grid-column-gap: 200px;
+  grid-column-gap: 100px;
 }
 
 .windproof-info-home, .waterproof-info-home, .breathable-info-home {
   max-width: 200px;
 }
 
-.popular-jackets {
-  grid-column-gap: 100px;
-}
-
 .popular-jackets h2,.about-part2 h1 {
   grid-column: -1/1;
+}
+
+.popular-jackets div {
+  margin: 0px 20px;
 }
 
 .popular-jackets p {
@@ -100,7 +92,7 @@
   margin: auto;
 }
 
-.about-part1,.about-part3 {
+.about-part1 {
   justify-content: space-between;
 }
 
@@ -165,7 +157,7 @@ flex: 1;
   max-width: 90%;
 }
 
-.xanadu-jacket, .team-photo-2, .contact-image {
+.xanadu-jacket, .team-photo-2 {
   margin-top: 10px;
 }
 
@@ -173,15 +165,11 @@ flex: 1;
   margin-top: 3%;
 }
 
-.xanadu-details, .contact-image {
+.xanadu-details {
   max-width: 800px;
 }
 
-.xanadu-info2 {
-  width: 90%;
-}
-
-.xanadu-info2, .about-part3-text {
+.about-part3-text {
   margin-right: 50px;
 }
 
@@ -209,8 +197,6 @@ flex: 1;
 
 .about-part2 {
   grid-template-columns: repeat(2,1fr);
-  max-width: 1000px;
-  padding: 20px, 0px;
   margin: 10px 10% 10px 20%;
 }
 
@@ -243,6 +229,10 @@ flex: 1;
   justify-content: center;
 }
 
+.contact-image {
+  margin: 10px 10px 5px 0px;
+}
+
 .contact-content2 {
   flex-wrap: wrap;
 }
@@ -250,6 +240,7 @@ flex: 1;
 .contact-info {
   gap: 150px;
   line-height: 15px;
+  margin: 0px 5px;
 }
 
 input, #sizes, textarea {
@@ -277,7 +268,7 @@ padding: 10px;
     padding: 20px;
   }
 
-  .page-intro, .home-intro-image, .popular-jackets, .popular-jackets h2 {
+  .page-intro, .home-intro-image, .popular-jackets h2 {
     margin: auto;
   }
   
@@ -289,7 +280,7 @@ padding: 10px;
     grid-template-columns: 1fr;
   }
 
-  .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2, .windproof-info-home, .waterproof-info-home, .breathable-info-home, .popular-jackets, .about-part1-text  {
+  .home-intro-section, .fabric-info-home, .about-part2, .windproof-info-home, .waterproof-info-home, .breathable-info-home  {
     max-width: 600px;
   }
 
@@ -310,13 +301,9 @@ padding: 10px;
     margin: 10px auto;
   }
 
-  .fabric-info-home {
-    margin: 20px auto;
-  }
-
   .windproof-info-home, .waterproof-info-home, .breathable-info-home, .xanadu-info1 {
     text-align: left;
-    margin: 0px 30px;
+    margin: 10px 30px;
   }
 
   .fabric-icon {
@@ -324,15 +311,11 @@ padding: 10px;
   }
 
   .popular-jackets {
-    margin: 15px 5px;
+    margin: 15px auto;
   }
 
   .popular-jackets, .xanadu-page, .xanadu-info2 {
     gap: 20px;
-  }
-
-  .popular-jackets p {
-    margin: auto;
   }
 
   .popular-jackets p, .contact-image {
@@ -380,7 +363,7 @@ padding: 10px;
 
   .xanadu-info2 {
     flex-direction: column-reverse;
-    margin: 0px auto;
+    margin: 0px 30px;
   }
 
   .xanadu-info2, .contact-content2  {
@@ -395,10 +378,6 @@ padding: 10px;
     gap: 5px;
     padding: 0px;
     margin-left: -5px;
-  }
-
-  .product-add-size-cart, .contact-content2 {
-    justify-content: center;
   }
 
   #sizes {
@@ -498,10 +477,6 @@ padding: 10px;
     grid-template-columns: 1fr;
   }
 
-  .popular-jackets {
-    margin: 10px auto;
-  }
-
   .home-intro-section {
     padding: 15px 0;
   }
@@ -509,10 +484,6 @@ padding: 10px;
   .home-intro-text {
     max-width: 90%;
     margin: 15px auto;
-  }
-
-  .home-page-main-image {
-    max-width: 400px;
   }
 
   .home-intro-image {
@@ -554,7 +525,7 @@ padding: 10px;
     grid-gap: 5px;
   }
 
-  .product-list, .contact-image {
+  .contact-image {
     margin: 20px auto;
   }
 
@@ -635,7 +606,7 @@ padding: 10px;
   margin-left: 150px;
   }
 
-  .contact-content1, .contact-content2 {
+  .contact-content2 {
     justify-content: center;
   }
 
@@ -647,12 +618,17 @@ padding: 10px;
     flex-direction: column-reverse;
   }
 
-  .contact-info, .fabric-info-home {
+  .fabric-info-home {
     gap: 30px;
   }
 
   .contact-image{
     max-width: 850px;
+  }
+
+  .contact-info {
+    gap: 200px;
+    margin-top: 20px;
   }
 
 }
@@ -677,7 +653,6 @@ padding: 10px;
   }
 
   .xanadu-info2 {
-    margin-right: 10px;
     max-width: 80%;
   }
 
