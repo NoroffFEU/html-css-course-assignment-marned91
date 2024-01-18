@@ -81,7 +81,7 @@ display: inline-block;
 padding-inline: 0px 40px;
 }
 
-.nav, .nav-desktop, .dark-button-submit {
+.nav, .nav-desktop, .dark-button-submit, .dark-button-cart {
 margin-top: 15px;
 }
 
@@ -93,7 +93,7 @@ nav a, nav li {
 font-size: 1rem;
 }
 
-.light-button, .dark-button, #submit-button, nav a{
+.light-button, .dark-button, #submit-button, nav a, .dark-button-cart{
 text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ header,nav,.footer{
 background-color: #E0E5E0;
 }
 
-#menu-checkbox {
+#menu-checkbox, .h1-invisible {
 display: none;
 }
 
@@ -171,7 +171,7 @@ p, .light-button, .contactform label, .form__input {
 font-size: 16px;
 }
 
-.light-button, .dark-button, .dark-button-submit {
+.light-button, .dark-button, .dark-button-submit, .dark-button-cart {
 border-style: none;
 border-radius: 10px;
 }
@@ -183,16 +183,23 @@ padding: 6px 4% 3px 4%;
 border-color: white;
 }
 
-.dark-button, .dark-button-submit {
+.dark-button, .dark-button-submit, .dark-button-cart {
 background-color: black;
 color: white;
 }
 
 .dark-button, .dark-button-submit {
-width: 200px;
+  width: 200px;
+  padding: 10px;
+}
+
+.dark-button, .dark-button-submit, .dark-button-cart {
 text-align: center;
 font-size: 15px;
-padding: 10px;
+}
+
+.dark-button-cart {
+  padding: 10px 60px;
 }
 
 
@@ -202,6 +209,7 @@ padding: 10px;
       .nav-mobile, .nav-desktop {
       display: none;
     }
+  
 
       header {
       padding: 5px;
@@ -246,7 +254,7 @@ padding: 10px;
       font-size: 6px;
     }
 
-    .dark-button {
+    .dark-button, .dark-button-cart {
       font-size: 13px;
       height: 20px;
     }
@@ -326,5 +334,9 @@ padding: 10px;
     .popular-jackets-image-small, .hamburger-icon, .nav-mobile {
       display: none;
     }
+
+    .hamburger-menu:has(#menu-checkbox: :checked) ~ .nav-mobile {
+      display: none
+      }
   
   }

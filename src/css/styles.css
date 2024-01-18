@@ -15,7 +15,7 @@
   grid-column-gap: 10px;
 }
 
-.xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform {
+.xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform, .shopping-cart {
   display: flex;
 }
 
@@ -67,7 +67,7 @@
   grid-template-columns: repeat(3,1fr);
 }
 
-.fabric-info-home, .product-list, .popular-jackets, .products div, .contact-info {
+.fabric-info-home, .product-list, .popular-jackets, .products div, .contact-info, .shopping-cart-1-content, .shopping-cart-2 {
   text-align: center;
 }
 
@@ -105,7 +105,7 @@
   align-items: center;
 }
 
-.about-part3-text,.product-add-size-cart, .contact-content > * {
+.about-part3-text,.product-add-size-cart, .contact-content > *, .shopping-cart >* {
 flex: 1;
 }
 
@@ -262,6 +262,47 @@ padding: 10px;
 .contactform label, .contactform h1 {
   margin-left: 9px;
 }
+
+.shopping-cart {
+  margin: 10px;
+  min-height: 100vh;
+}
+
+.shopping-cart-1 {
+  background-color: rgba( 10, 65, 62, .35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0px -10px 40px;
+}
+
+.shopping-cart-1-content {
+  line-height: 60px;
+}
+
+.shopping-cart-2 {
+  position: relative;
+  overflow: hidden;
+  margin: -10px 40px -10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-cart-2-content {
+  position: absolute;
+  font-size: 130px;
+}
+
+.shopping-cart-background, .shopping-cart-2-content {
+  width: 100%;
+}
+
+
+.shopping-cart-background {
+  height: 100%;
+}
+
 
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -637,7 +678,7 @@ padding: 10px;
 
 /*laptop and desktop*/
 @media screen and (min-width: 901px) and (max-width: 20000px) {
-  .popular-jackets-image-small, .back-top {
+  .popular-jackets-image-small, .back-top, .nav-mobile {
     display: none;
   }
 
