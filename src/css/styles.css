@@ -89,7 +89,7 @@
 }
 
 .popular-jackets p {
-  max-width: 300px;
+  max-width: 320px;
   margin: auto;
 }
 
@@ -462,7 +462,7 @@ padding: 10px;
     padding: 30px;
   }
 
-  .page-intro, .popular-jackets p {
+  .page-intro, .popular-jackets p, .popular-jackets {
     margin: auto;
   }
   
