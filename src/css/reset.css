@@ -48,7 +48,7 @@ margin-top: 5px;
   background-color: #658D7A;
 }
 
-.nav-mobile a:visited, .nav-mobile a:link {
+.nav-mobile a:visited, .nav-mobile a:link, .fa-solid {
   color: black ;
 }
 
