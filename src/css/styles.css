@@ -14,7 +14,7 @@
   grid-column-gap: 10px;
 }
 
-.xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform, .shopping-cart {
+.xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform, .shopping-cart, .shopping-cart-1, .shopping-cart-2  {
   display: flex;
 }
 
@@ -100,7 +100,7 @@
   gap: 30px;
 }
 
-.products, .product-add-size-cart {
+.products, .product-add-size-cart, .contact-content2, .shopping-cart-1, .shopping-cart-2 {
   align-items: center;
 }
 
@@ -220,14 +220,17 @@ flex: 1;
 
 .contact-content1 {
   background-color: #A9BCBB;
+}
+
+.shopping-cart-background, .contact-content1 {
   height: 100%;
 }
 
-.contact-content1,.contact-content2 {
+.contact-content1,.contact-content2, .shopping-cart {
   min-height: 100vh;
 }
 
-.contact-content1,.contact-content2, .contact-info {
+.contact-content1,.contact-content2, .contact-info, .shopping-cart-1, .shopping-cart-2 {
   justify-content: center;
 }
 
@@ -237,7 +240,6 @@ flex: 1;
 
 .contact-content2 {
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .contact-info {
@@ -268,14 +270,10 @@ padding: 10px;
 
 .shopping-cart {
   margin: 10px;
-  min-height: 100vh;
 }
 
 .shopping-cart-1 {
   background-color: rgba( 10, 65, 62, .35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: -10px 0px -10px 40px;
 }
 
@@ -287,9 +285,6 @@ padding: 10px;
   position: relative;
   overflow: hidden;
   margin: -10px 40px -10px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .shopping-cart-2-content {
@@ -305,10 +300,6 @@ padding: 10px;
   padding-top: 140px;
 }
 
-.shopping-cart-background {
-  height: 100%;
-}
-
 
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -316,7 +307,7 @@ padding: 10px;
     padding: 20px;
   }
 
-  .page-intro, .home-intro-image, .popular-jackets h2 {
+  .page-intro, .home-intro-image, .popular-jackets h2, .shopping-cart-2 {
     margin: auto;
   }
   
@@ -324,7 +315,7 @@ padding: 10px;
     max-width: 95%;
   }
   
-  .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2  {
+  .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2, .shopping-cart  {
     grid-template-columns: 1fr;
   }
 
@@ -370,7 +361,7 @@ padding: 10px;
     max-width: 350px;
   }
 
-  .popular-jackets-image {
+  .popular-jackets-image,.cart-h1  {
     display: none;
   }
 
@@ -449,7 +440,6 @@ padding: 10px;
   }
 
   .about-part2 {
-    display: grid;
     margin: 20px 30px;
   }
 
@@ -471,7 +461,6 @@ padding: 10px;
   }
 
   .contact-content1,.contact-content2 {
-    margin: 0px 20px;
     max-width: 90%;
   }
 
@@ -502,28 +491,24 @@ padding: 10px;
   }
 
   .shopping-cart {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px;
     align-items: center ;
   }
 
-  .shopping-cart-1, .shopping-cart-2 {
+  .shopping-cart, .shopping-cart-1, .shopping-cart-2 {
     margin: 0px;
+  }
+
+  .about-part2, .shopping-cart {
+    display: grid;
+  }
+
+  .shopping-cart-1, .shopping-cart-2 {
     padding-bottom: 20px;
     height: 100%;
   }
 
-  .shopping-cart-2 {
-    margin: auto;
-  }
-
-  .shopping-cart-2-content, .shopping-cart-1-content {
+  .shopping-cart-2-content, .shopping-cart-1-content, .contact-content1,.contact-content2 {
     margin: 0px 20px;
-  }
-
-  .cart-h1 {
-    display: none;
   }
 
 
@@ -535,7 +520,7 @@ padding: 10px;
     padding: 30px;
   }
 
-  .page-intro, .popular-jackets p, .popular-jackets {
+  .page-intro, .popular-jackets p, .popular-jackets, .shopping-cart-2 {
     margin: auto;
   }
   
@@ -547,7 +532,7 @@ padding: 10px;
     display: none;
   }
 
-  .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2 {
+  .home-intro-section, .fabric-info-home, .popular-jackets, .about-part2, .shopping-cart {
     grid-template-columns: 1fr;
   }
 
@@ -603,7 +588,7 @@ padding: 10px;
     margin: 20px auto;
   }
 
-  .products {
+  .products, .shopping-cart-2-content, .shopping-cart-1-content {
     margin: 0px 20px;
   }
 
@@ -667,8 +652,11 @@ padding: 10px;
   }
 
   .about-part2 {
-    display: grid;
     margin: 20px 40px;
+  }
+
+  .about-part2, .shopping-cart {
+    display: grid;
   }
 
   .about-part3-text {
@@ -706,29 +694,23 @@ padding: 10px;
   }
 
   .shopping-cart {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px;
     align-items: center ;
   }
 
-  .shopping-cart-1, .shopping-cart-2 {
+  .shopping-cart, .shopping-cart-1, .shopping-cart-2 {
     margin: 0px;
+  }
+
+  .shopping-cart-1, .shopping-cart-2 {
     padding-bottom: 20px;
   }
 
   .shopping-cart-2 {
-    margin: auto;
     align-items: center;
   }
 
   .shopping-cart-2 {
-    margin: auto;
     background-color: rgba( 10, 65, 62, .35);
-  }
-
-  .shopping-cart-2-content, .shopping-cart-1-content {
-    margin: 0px 20px;
   }
 
   .cart-h1 {
