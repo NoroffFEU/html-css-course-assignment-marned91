@@ -73,6 +73,7 @@
 
 .fabric-info-home, .popular-jackets {
   grid-column-gap: 100px;
+  margin-top: 20px;
 }
 
 .windproof-info-home, .waterproof-info-home, .breathable-info-home {
