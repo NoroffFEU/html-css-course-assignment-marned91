@@ -1,17 +1,11 @@
-body {
-color: var(--color-primary);
-background-color: var(--color-secondary);
-min-height: 100vh;
-}
-
 body, h2, h3, .h4, .prices-home, .contactform h1, .contactform label {
-font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Cambay', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html, body {
-max-width: 100%;
-overflow-x: hidden;
-margin: 0%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0%;
 }
 
 main {
@@ -19,20 +13,20 @@ main {
 }
 
 .footer, header {
-display: flex;
+  display: flex;
 }
 
 header {
-height: 85px;
+  height: 85px;
 }
 
 .logo {
-flex: none;
-margin-left: 80px;
-margin-top: 5px;
+  flex: none;
+  margin-left: 80px;
+  margin-top: 5px;
 }
 
-.hamburger-menu:has(#menu-checkbox:checked) ~ .nav-mobile {
+.hamburger-menu:has(#menu-checkbox:checked) ~ .nav-mobile, .nav-desktop li {
   display: inline-block;
   }
 
@@ -48,10 +42,6 @@ margin-top: 5px;
   background-color: #658D7A;
 }
 
-.nav-mobile a:visited, .nav-mobile a:link {
-  color: black ;
-}
-
 .nav-mobile li {
   padding-inline: 0 10px;
 }
@@ -61,98 +51,88 @@ margin-top: 5px;
   margin-left: 15px;
 }
 
-.nav-mobile nav {
-  text-align: center;
-}
-
 .nav-desktop {
-flex-grow: 5;
-justify-content: flex-start;
-margin-left: 30px;
+  flex-grow: 5;
+  justify-content: flex-start;
+  margin-left: 30px;
 }
 
 .cart {
-flex-grow: 1;
-margin-left: 30px;
-padding-top: 5px;
+  flex-grow: 1;
+  margin-left: 30px;
+  padding-top: 5px;
 }
 
 .nav-desktop li {
-display: inline-block;
-padding-inline: 0px 40px;
+  padding-inline: 0px 40px;
 }
 
 .nav, .nav-desktop, .dark-button-submit, .dark-button-cart {
-margin-top: 15px;
+  margin-top: 15px;
 }
 
 .cart {
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 nav a, nav li {
-font-size: 1rem;
+  font-size: 1rem;
 }
 
 .light-button, .dark-button, #submit-button, nav a, .dark-button-cart{
-text-decoration: none;
+  text-decoration: none;
 }
 
-.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link, #cart-icon, #cart-icon a:visited, #cart-icon a:link, .hamburger-icon {
-color: #0A3641;
+.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link, #cart-icon, #cart-icon a:visited, #cart-icon a:link, .hamburger-icon, .page-divider-small, .page-divider-large, .fa-brands {
+  color: #0A3641;
 }
 
 nav a:hover, .active-desktop {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 header,nav,.footer{
-background-color: #E0E5E0;
+  background-color: #E0E5E0;
 }
 
 #menu-checkbox, .h1-invisible {
-display: none;
+  display: none;
 }
 
 .logo-image {
-height: 70px;
-width: 8rem;
+  height: 70px;
+  width: 8rem;
 }
     
 .page-divider-small, .page-divider-large {
-background-color: #0A3641;
-padding: 30px;
+  padding: 30px;
 }
     
 .page-divider-small {
-padding: 2rem;
+  padding: 2rem;
 }
     
 .page-divider-large {
-padding: 35px;
+  padding: 35px;
 }
 
 .footer p {
-font-size: 12px;
+  font-size: 12px;
 }
 
 .footer-left, .footer-right {
-text-align: left;
-flex: 1;
-margin-left: 35px;
+  text-align: left;
+  flex: 1;
+  margin-left: 35px;
 }
 
 .footer-right {
-text-align: right;
-margin-right: 35px;
+  text-align: right;
+  margin-right: 35px;
 }
 
 .bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .prices-jackets, .contactform h1 {
-font-weight: bold;
-}
-
-.bold-p-small {
-font-size: 15px;
+  font-weight: bold;
 }
 
 .bold-p-large, h2,.hamburger-icon, .cart {
@@ -160,33 +140,36 @@ font-size: 15px;
 }
 
 h1 {
-font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-font-size: 25px;
+  font-family: 'Lato', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 
 h3, .prices-home, .prices-jackets, .contactform h1{
-font-size: 18px;
+  font-size: 18px;
 }
 
 p, .light-button, .contactform label, .form__input {
-font-size: 16px;
+  font-size: 16px;
 }
 
 .light-button, .dark-button, .dark-button-submit, .dark-button-cart {
-border-style: none;
-border-radius: 10px;
+  border-style: none;
+  border-radius: 10px;
 }
 
 .light-button{
-background-color: white;
-color: black;
-padding: 6px 4% 3px 4%;
-border-color: white;
+  background-color: white;
+  padding: 6px 4% 3px 4%;
+  border-color: white;
+}
+
+.nav-mobile a:visited, .nav-mobile a:link, .light-button {
+  color: black;
 }
 
 .dark-button, .dark-button-submit, .dark-button-cart {
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
 }
 
 .dark-button, .dark-button-submit {
@@ -194,56 +177,42 @@ color: white;
   padding: 10px;
 }
 
-.dark-button, .dark-button-submit, .dark-button-cart {
-text-align: center;
-font-size: 15px;
+.dark-button, .dark-button-submit, .dark-button-cart, .nav-mobile nav {
+  text-align: center;
+}
+
+.bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart {
+  font-size: 15px;
 }
 
 .dark-button-cart {
   padding: 10px 60px;
 }
 
-.fa-brands {
-  color: #0a3641;
-}
-
 
 /*mobile and small tablets*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
         
-      .nav-mobile, .nav-desktop {
+    .nav-mobile, .nav-desktop {
       display: none;
     }
-  
 
-      header {
+    header {
       padding: 5px;
+    }
+
+    header, .logo, .hamburger-menu, .cart {
       display: flex;
     }
 
-      .logo {
-      display: flex;
+    .logo, .hamburger-menu, .cart {
       flex: 1;
       justify-content: center;
-      margin: auto;
-    }
-
-      .hamburger-menu {
-      display: flex;
-      justify-content: center;
-      flex: 1;
       margin: auto;
     }
 
       .hamburger-icon {
       margin-top: 5px;
-    }
-        
-      .cart {
-      display: flex;
-      flex: 1;
-      margin: auto;
-      justify-content: center;
     }
         
       nav li {
@@ -286,42 +255,30 @@ font-size: 15px;
     }
 
     header {
-    padding: 5px;
-    display: flex;
+      padding: 5px;
     }
 
-    .logo {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    margin: auto;
+    .logo, .hamburger-menu, header, .cart {
+      display: flex;
     }
 
-    .hamburger-menu {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    margin: auto;
+    .logo, .hamburger-menu, .cart {
+      justify-content: center;
+      flex: 1;
+      margin: auto;
     }
 
     .hamburger-icon {
       margin-top: 5px;
     }
     
-    .cart {
-    display: flex;
-    flex: 1;
-    margin: auto;
-    justify-content: center;
-    }
-    
     nav li {
-    display: inline-block;
-    padding:  0px 20px;
+      display: inline-block;
+      padding:  0px 20px;
     }
     
     nav a, nav li {
-    font-size: 1rem;
+      font-size: 1rem;
     }
 
     .nav-mobile li {
@@ -340,10 +297,6 @@ font-size: 15px;
       display: none;
     }
 
-    .hamburger-menu:has(#menu-checkbox: :checked) ~ .nav-mobile {
-      display: none
-    }
-
     h2 {
       font-size: 25px;
     }
@@ -357,7 +310,7 @@ font-size: 15px;
     }
 
     .prices-jackets, nav a, nav li  {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     
