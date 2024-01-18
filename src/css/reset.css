@@ -344,24 +344,24 @@ font-size: 15px;
       display: none
     }
 
-    h2, .bold-p-large {
-      font-size: 25px;
-    }
-
-    h1, .contactform h1 {
+    h2 {
       font-size: 30px;
     }
 
-    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
-      font-size: 18px;
+    h1, .contactform h1 {
+      font-size: 40px;
     }
 
-    .prices-jackets {
+    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
       font-size: 20px;
     }
 
+    .prices-jackets {
+      font-size: 25px;
+    }
+
     nav a, nav li {
-      font-size: 17px;
+      font-size: 18px;
     }
     
     .cart {

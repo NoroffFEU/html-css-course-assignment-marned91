@@ -14,7 +14,7 @@
   grid-column-gap: 10px;
 }
 
-.about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform, .shopping-cart, .shopping-cart-1, .shopping-cart-2  {
+.xanadu-page, .about-part1,.about-part3, .contact-content, .contact-content1, .contact-info, .product-add-size-cart,.contact-content2, .contactform, .shopping-cart, .shopping-cart-1, .shopping-cart-2  {
   display: flex;
 }
 
@@ -43,7 +43,7 @@
   margin-left: -60px;
 }
 
-.home-intro-image {
+.home-intro-image, .xanadu-details {
   margin-right: 20px;
 }
 
@@ -145,8 +145,28 @@ flex: 1;
   min-width: 20%;
 }
 
-.team-photo-2, .home-intro-image {
+.xanadu-page {
+  gap: 60px;
+}
+
+.xanadu-image {
+  margin-left: 40px;
+}
+
+.xanadu-jacket {
+  max-width: 90%;
+}
+
+.xanadu-jacket, .team-photo-2, .home-intro-image {
   margin-top: 10px;
+}
+
+.xanadu-details {
+  margin-top: 3%;
+}
+
+.xanadu-details {
+  max-width: 800px;
 }
 
 .product-add-size-cart {
@@ -172,11 +192,8 @@ flex: 1;
 }
 
 .about-part2 {
-  margin: 10px 10% 10px 20%;
-}
-
-.about-part2 {
   grid-template-columns: repeat(2,1fr);
+  margin: 10px 10% 10px 20%;
 }
 
 .values {
@@ -298,7 +315,7 @@ padding: 10px;
     margin: auto;
   }
   
-  .page-intro p {
+  .page-intro p, .xanadu-details {
     max-width: 95%;
   }
   
@@ -327,7 +344,7 @@ padding: 10px;
     margin: 10px auto;
   }
 
-  .windproof-info-home, .waterproof-info-home, .breathable-info-home {
+  .windproof-info-home, .waterproof-info-home, .breathable-info-home, .xanadu-info1 {
     text-align: left;
     margin: 10px 30px;
   }
@@ -340,7 +357,7 @@ padding: 10px;
     margin: 15px auto;
   }
 
-  .popular-jackets {
+  .popular-jackets, .xanadu-page, .xanadu-info2 {
     gap: 20px;
   }
 
@@ -352,7 +369,7 @@ padding: 10px;
     display: none;
   }
 
-  .popular-jackets-image-small, .about-part2 > *  {
+  .popular-jackets-image-small, .xanadu-jacket, .about-part2 > *  {
     max-width: 100%;
   }
   
@@ -367,7 +384,7 @@ padding: 10px;
     margin: 0px auto;
   }
 
-  .products {
+  .products, .xanadu-image {
     margin: 0px 10px;
   }
 
@@ -375,11 +392,24 @@ padding: 10px;
     margin: 10px;
   }
 
- .contact-content {
+  .xanadu-page, .contact-content {
     flex-wrap: wrap;
   }
 
-.contact-content2  {
+  .xanadu-details {
+    margin: 5px 10px;
+  }
+
+  .xanadu-info1 {
+    line-height: 12px;
+  }
+
+  .xanadu-info2 {
+    flex-direction: column-reverse;
+    margin: 0px 30px;
+  }
+
+  .xanadu-info2, .contact-content2  {
     display: flex;
   }
 
@@ -498,7 +528,7 @@ padding: 10px;
     margin: auto;
   }
   
-  .page-intro p, .about-part2 > *   {
+  .page-intro p, .xanadu-jacket, .xanadu-details, .about-part2 > *   {
     max-width: 100%;
   }
   
@@ -570,15 +600,31 @@ padding: 10px;
     margin: 15px 50px;
   }
 
-  .contact-content {
+  .xanadu-page {
+    gap: 10px;
+  }
+
+  .xanadu-page, .xanadu-details, .contact-content {
     flex-wrap: wrap;
   }
 
-  .contact-content2  {
+  .xanadu-image {
+    margin: 0px auto;
+  }
+
+  .xanadu-details {
+    margin: 10px 50px;
+  }
+
+  .xanadu-details, .contact-content2 {
     display: flex;
   }
 
-  .contact-content1 {
+  .xanadu-info1 {
+    line-height: 12px;
+  }
+
+  .xanadu-info2, .xanadu-info1, .contact-content1 {
     margin: 0px 10px;
   }
 
@@ -698,7 +744,7 @@ padding: 10px;
     max-width: 250px;
   }
 
-  .waterproof-info-home p, .windproof-info-home p, .breathable-info-home p, .about-part3-text p, .about-part1-text p, .page-intro p {
+  .waterproof-info-home p, .windproof-info-home p, .breathable-info-home p, .about-part3-text p {
     font-size: 20px;
   }
 
@@ -710,12 +756,20 @@ padding: 10px;
     max-width: 400px;
   }
 
+  .page-intro p {
+    font-size: 23px;
+  }
+
   .product-images{
     width: 70%;
   }
 
+  .xanadu-jacket {
+    min-width: 400px;
+  }
+
   .contact-content1 {
-    margin: -30px 70px;
+    margin: 0px 70px;
     padding-bottom: 60px;
   }
 
@@ -723,6 +777,7 @@ padding: 10px;
     flex-wrap: wrap;
     text-align: center;
     width: 70%;
+    height: ;
   }
 
   .contact-image {
@@ -734,6 +789,10 @@ padding: 10px;
     width: 70%;
   }
 
+  .xanadu-info2 {
+    max-width: 80%;
+  }
+
   .about-part1-text {
     max-width: 47%;
     margin-left: 13%;
@@ -741,6 +800,10 @@ padding: 10px;
 
   .about-part3-text {
     margin-top: 40px;
+  }
+
+  .about-part1-text p {
+    font-size: 25px;
   }
 
   .about-part3-text p {
