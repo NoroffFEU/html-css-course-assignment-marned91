@@ -98,7 +98,7 @@ font-size: 1rem;
 text-decoration: none;
 }
 
-.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link, #cart-icon, #cart-icon a:visited, #cart-icon a:link {
+.active-desktop, header, nav, .footer, .nav-desktop a:visited, .nav-desktop a:link, #cart-icon, #cart-icon a:visited, #cart-icon a:link, .hamburger-icon {
 color: #0A3641;
 }
 
@@ -345,24 +345,21 @@ font-size: 15px;
     }
 
     h2 {
-      font-size: 30px;
-    }
-
-    h1, .contactform h1 {
-      font-size: 40px;
-    }
-
-    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
-      font-size: 20px;
-    }
-
-    .prices-jackets {
       font-size: 25px;
     }
 
-    nav a, nav li {
+    h1, .contactform h1 {
+      font-size: 30px;
+    }
+
+    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
       font-size: 18px;
     }
+
+    .prices-jackets, nav a, nav li  {
+      font-size: 18px;
+    }
+
     
     .cart {
       margin: auto;

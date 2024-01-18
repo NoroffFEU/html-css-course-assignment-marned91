@@ -756,7 +756,7 @@ padding: 10px;
   }
 
   .page-intro p {
-    font-size: 23px;
+    font-size: 18px;
   }
 
   .product-images{
@@ -769,14 +769,14 @@ padding: 10px;
 
   .contact-content1 {
     margin: 0px 70px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    margin-top: -50px;
   }
 
   .contact-content2 {
     flex-wrap: wrap;
     text-align: center;
     width: 70%;
-    height: ;
   }
 
   .contact-image {
@@ -802,7 +802,7 @@ padding: 10px;
   }
 
   .about-part1-text p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about-part3-text p {
