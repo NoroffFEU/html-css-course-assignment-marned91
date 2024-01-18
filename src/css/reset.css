@@ -73,7 +73,8 @@ margin-left: 30px;
 
 .cart {
 flex-grow: 1;
-margin-left: 100px;
+margin-left: 30px;
+padding-top: 5px;
 }
 
 .nav-desktop li {
@@ -200,6 +201,10 @@ font-size: 15px;
 
 .dark-button-cart {
   padding: 10px 60px;
+}
+
+.fa-brands {
+  color: #0a3641;
 }
 
 
@@ -337,6 +342,32 @@ font-size: 15px;
 
     .hamburger-menu:has(#menu-checkbox: :checked) ~ .nav-mobile {
       display: none
-      }
-  
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h1, .contactform h1 {
+      font-size: 40px;
+    }
+
+    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
+      font-size: 20px;
+    }
+
+    .prices-jackets {
+      font-size: 25px;
+    }
+
+    nav a, nav li {
+      font-size: 18px;
+    }
+    
+    .cart {
+      margin: auto;
+      text-align: center;
+    }
+
+ 
   }
