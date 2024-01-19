@@ -145,10 +145,6 @@ flex: 1;
   min-width: 20%;
 }
 
-.xanadu-page {
-  gap: 60px;
-}
-
 .xanadu-image {
   margin-left: 40px;
 }
@@ -764,8 +760,12 @@ padding: 10px;
     width: 70%;
   }
 
+  .xanadu-image, .xanadu-details {
+    flex: 1;
+  }
+
   .xanadu-jacket {
-    min-width: 400px;
+    width: 100%;
   }
 
   .contact-content1 {
