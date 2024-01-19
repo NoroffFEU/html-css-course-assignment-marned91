@@ -132,7 +132,7 @@ header,nav,.footer{
   margin-right: 35px;
 }
 
-.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .prices-jackets, .contactform h1 {
+.bold-p-small, .bold-p-large, h2, h3, .h4, .prices-home, .contactform h1 {
   font-weight: bold;
 }
 
@@ -230,7 +230,7 @@ p, .light-button, .contactform label, .form__input {
     }
 
     .dark-button, .dark-button-cart {
-      font-size: 13px;
+      font-size: 12px;
       height: 20px;
     }
 
@@ -298,11 +298,11 @@ p, .light-button, .contactform label, .form__input {
       display: none;
     }
 
-    h2 {
+    h2, .contactform h1 {
       font-size: 25px;
     }
 
-    h1, .contactform h1 {
+    h1 {
       font-size: 30px;
     }
 
@@ -310,11 +310,14 @@ p, .light-button, .contactform label, .form__input {
       font-size: 18px;
     }
 
-    .prices-jackets, nav a, nav li  {
+    nav a, nav li, .bold-p-large  {
       font-size: 20px;
     }
 
-    
+    .prices-jackets {
+      font-size: 22px;
+    }
+
     .cart {
       margin: auto;
       text-align: center;

@@ -100,12 +100,12 @@
   gap: 30px;
 }
 
-.products, .product-add-size-cart, .contact-content2, .shopping-cart-1, .shopping-cart-2 {
+.products, .product-add-size-cart, .contact-content2, .shopping-cart-1 {
   align-items: center;
 }
 
 .about-part3-text,.product-add-size-cart, .contact-content > *, .shopping-cart >* {
-flex: 1;
+  flex: 1;
 }
 
 .fabric-icon {
@@ -141,7 +141,7 @@ flex: 1;
 }
 
 .all-icons {
-  max-width: 20%;
+  max-width: 21%;
   min-width: 20%;
 }
 
@@ -161,10 +161,6 @@ flex: 1;
   margin-top: 3%;
 }
 
-.xanadu-details {
-  max-width: 800px;
-}
-
 .product-add-size-cart {
   margin: 10px 5px 0px -5px;
   justify-content: left;
@@ -178,7 +174,7 @@ flex: 1;
   width: 200px;
   background-color: #E0E5E0;
   padding: 13px;
-  height: 45px;
+  height: 49px;
 }
 
 .about-part1-text {
@@ -197,8 +193,7 @@ flex: 1;
 }
 
 .team-photo-1 {
-  margin-right: 35px;
-  margin-top: 25px;
+  margin: 25px 35px 0px 0px;
 }
 
 .team-photo-2, .team-photo-1 {
@@ -212,14 +207,13 @@ flex: 1;
 .contact-content {
   gap: 10px;
   margin-top: 5%;
-  
 }
 
 .contact-content1 {
   background-color: #A9BCBB;
 }
 
-.shopping-cart-background {
+.shopping-cart-background, .contactform {
   height: 100%;
 }
 
@@ -247,20 +241,19 @@ flex: 1;
 }
 
 input, #sizes, textarea {
-border: none;
-border-radius: 10px;
-margin: 5px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .form__input, textarea {
-padding: 10px;
+  padding: 10px;
 }
 
 .contactform {
   flex-direction: column;
   width: 80%;
   margin-top: 10%;
-  height: 100%;
 }
 
 .contactform label, .contactform h1 {
@@ -288,7 +281,10 @@ padding: 10px;
 
 .shopping-cart-2-content {
   position: absolute;
-  font-size: 130px;
+}
+
+.shopping-cart-2-content h1 {
+  font-size: 60px;
 }
 
 .shopping-cart-background, .shopping-cart-2-content {
@@ -297,6 +293,8 @@ padding: 10px;
 
 #shopping-cart-icon {
   padding-top: 140px;
+  color: rgba(0, 0, 0, .70);
+  font-size: 130px;
 }
 
 
@@ -375,7 +373,6 @@ padding: 10px;
 
   .products p {
     width: 50%;
-    text-align: center;
     margin: 0px auto;
   }
 
@@ -430,7 +427,6 @@ padding: 10px;
   }
 
   .about-part1-text {
-    line-height: 35px;
     margin: 20px;
   }
 
@@ -442,8 +438,8 @@ padding: 10px;
     margin: 20px 30px;
   }
 
-  .about-part3-text {
-  line-height: 32px;
+  .about-part3-text, .about-part1-text {
+    line-height: 32px;
   }
 
   .back-top {
@@ -451,12 +447,12 @@ padding: 10px;
     line-height: 5px;
   }
 
-  .back-top, .contact-office, .contact-phone {
+  .back-top, .contact-office, .contact-phone, .products p, .product-add-size-cart {
     text-align: center;
   }
 
   .team-photo-2 {
-  margin-left: 30px;
+    margin-left: 30px;
   }
 
   .contact-content1,.contact-content2 {
@@ -490,7 +486,7 @@ padding: 10px;
   }
 
   .shopping-cart {
-    align-items: center ;
+    align-items: center;
   }
 
   .shopping-cart, .shopping-cart-1, .shopping-cart-2 {
@@ -527,7 +523,7 @@ padding: 10px;
     max-width: 100%;
   }
   
-  .popular-jackets-image{
+  .popular-jackets-image,.cart-h1 {
     display: none;
   }
 
@@ -629,8 +625,7 @@ padding: 10px;
 
   .product-add-size-cart {
     align-items: left;
-    padding-bottom: 20px;
-    margin-left: -15px ;
+    margin-left: -15px;
   }
 
   #sizes {
@@ -660,12 +655,12 @@ padding: 10px;
   }
 
   .about-part3-text {
-  line-height: 32px;
-  margin: 5px 40px;
+    line-height: 32px;
+    margin: 5px 40px;
   }
 
   .team-photo-2, .team-photo-1 {
-  margin-left: 150px;
+    margin-left: 150px;
   }
 
   .contact-content2 {
@@ -694,7 +689,7 @@ padding: 10px;
     margin-top: 20px;
   }
 
-  .shopping-cart {
+  .shopping-cart, .shopping-cart-2 {
     align-items: center ;
   }
 
@@ -702,20 +697,12 @@ padding: 10px;
     margin: 0px;
   }
 
-  .shopping-cart-1, .shopping-cart-2 {
+  .shopping-cart-1, .shopping-cart-2, .product-add-size-cart {
     padding-bottom: 20px;
   }
 
   .shopping-cart-2 {
-    align-items: center;
-  }
-
-  .shopping-cart-2 {
     background-color: rgba( 10, 65, 62, .35);
-  }
-
-  .cart-h1 {
-    display: none;
   }
 
 }
@@ -728,19 +715,18 @@ padding: 10px;
   }
 
   .home-intro-section {
-    padding: 20px 0px
+    padding: 25px 0px;
   }
 
   .home-intro-text {
     margin-top: 40px;
-    font-size: 30px;
   }
 
   .waterproof-info-home, .windproof-info-home, .breathable-info-home {
     max-width: 250px;
   }
 
-  .waterproof-info-home p, .windproof-info-home p, .breathable-info-home p, .about-part3-text p {
+  .waterproof-info-home p, .windproof-info-home p, .breathable-info-home p, .about-part3-text p, .home-intro-text p {
     font-size: 20px;
   }
 
@@ -752,7 +738,7 @@ padding: 10px;
     max-width: 400px;
   }
 
-  .page-intro p {
+  .page-intro p, #sizes {
     font-size: 18px;
   }
 
@@ -764,8 +750,12 @@ padding: 10px;
     flex: 1;
   }
 
+  .xanadu-details {
+    margin-top: 6%;
+  }
+
   .xanadu-jacket {
-    width: 100%;
+    width: 80%;
   }
 
   .contact-content1 {
@@ -813,6 +803,10 @@ padding: 10px;
 
   .fabric-info-home div {
     margin: auto;
+  }
+
+  .shopping-cart-2-content {
+    margin-top: 10px;
   }
 
 }
