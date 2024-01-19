@@ -632,8 +632,9 @@ padding: 10px;
   }
 
   .product-add-size-cart {
-    padding-top: 20px;
-    justify-content: left;
+    align-items: left;
+    padding-bottom: 20px;
+    margin-left: -15px ;
   }
 
   #sizes {
