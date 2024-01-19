@@ -164,7 +164,7 @@ p, .light-button, .contactform label, .form__input {
   border-color: white;
 }
 
-.nav-mobile a:visited, .nav-mobile a:link, .light-button {
+.nav-mobile a:visited, .nav-mobile a:link, .light-button, .fa-solid {
   color: black;
 }
 
