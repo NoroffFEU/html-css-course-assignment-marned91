@@ -284,7 +284,7 @@ input, #sizes, textarea {
 }
 
 .shopping-cart-2-content h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .shopping-cart-background, .shopping-cart-2-content {
@@ -292,9 +292,8 @@ input, #sizes, textarea {
 }
 
 #shopping-cart-icon {
-  padding-top: 140px;
   color: rgba(0, 0, 0, .70);
-  font-size: 130px;
+  font-size: 90px;
 }
 
 
@@ -506,6 +505,11 @@ input, #sizes, textarea {
     margin: 0px 20px;
   }
 
+  #shopping-cart-icon {
+    font-size: 50px;
+    padding-top: 40px;
+  }
+
 
 }
 
@@ -703,6 +707,11 @@ input, #sizes, textarea {
 
   .shopping-cart-2 {
     background-color: rgba( 10, 65, 62, .35);
+  }
+
+  #shopping-cart-icon {
+    font-size: 70px;
+    padding-top: 40px;
   }
 
 }
