@@ -176,6 +176,8 @@ p, .light-button, .contactform label, .form__input {
 .dark-button, .dark-button-submit {
   width: 200px;
   padding: 10px;
+  min-height: 20px;
+  min-width: 100px;
 }
 
 .dark-button, .dark-button-submit, .dark-button-cart, .nav-mobile nav {
