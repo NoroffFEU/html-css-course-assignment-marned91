@@ -717,6 +717,12 @@ input, #sizes, textarea {
     padding-top: 40px;
   }
 
+  .back-top {
+    text-align: center;
+    margin-top: 60px;
+    line-height: 5px;
+  }
+
 }
 
 
