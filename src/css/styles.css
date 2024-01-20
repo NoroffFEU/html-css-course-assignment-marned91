@@ -188,10 +188,12 @@
   margin: 10px 10% 10px 20%;
 }
 
-.about-part1-text p
+.about-part2, .contact-content {
+  gap: 10px;
+}
 
 .values {
-  max-width: 70%;
+  max-width: 85%;
 }
 
 .team-photo-1 {
@@ -208,7 +210,6 @@
 }
 
 .contact-content {
-  gap: 10px;
   margin-top: 5%;
 }
 
