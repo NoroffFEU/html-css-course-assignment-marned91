@@ -188,6 +188,8 @@
   margin: 10px 10% 10px 20%;
 }
 
+.about-part1-text p
+
 .values {
   max-width: 70%;
 }
@@ -202,6 +204,7 @@
 
 .about-part3-text {
   line-height: 35px;
+  margin-left: 20px;
 }
 
 .contact-content {
@@ -735,10 +738,6 @@ input, #sizes, textarea {
     max-width: 250px;
   }
 
-  .waterproof-info-home p, .windproof-info-home p, .breathable-info-home p, .about-part3-text p, .home-intro-text p {
-    font-size: 20px;
-  }
-
   .popular-jackets-image {
     width: 90%;
   }
@@ -747,8 +746,8 @@ input, #sizes, textarea {
     max-width: 400px;
   }
 
-  .page-intro p, #sizes {
-    font-size: 18px;
+  #sizes {
+    font-size: 15px;
   }
 
   .product-images{
@@ -795,10 +794,6 @@ input, #sizes, textarea {
 
   .about-part3-text {
     margin-top: 40px;
-  }
-
-  .about-part1-text p {
-    font-size: 20px;
   }
 
   .about-part3-text p {

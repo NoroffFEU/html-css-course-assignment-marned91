@@ -296,7 +296,7 @@ p, .light-button, .contactform label, .form__input {
   
   /*laptop and desktop*/
   @media screen and (min-width: 901px) and (max-width: 20000px) {
-    .popular-jackets-image-small, .hamburger-icon, .nav-mobile {
+    .popular-jackets-image-small, .hamburger-icon, .nav-mobile, .hamburger-menu:has(#menu-checkbox:checked) ~ .nav-mobile {
       display: none;
     }
 
@@ -308,16 +308,12 @@ p, .light-button, .contactform label, .form__input {
       font-size: 30px;
     }
 
-    p, .bold-p-small, .dark-button, .dark-button-submit, .dark-button-cart, .contactform label, .form__input, .light-button { 
-      font-size: 18px;
-    }
-
-    nav a, nav li, .bold-p-large  {
-      font-size: 20px;
+    .bold-p-small, .form__input, .light-button, nav a, nav li, .bold-p-large { 
+      font-size: 17px;
     }
 
     .prices-jackets {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     .cart {
